@@ -1,9 +1,15 @@
 /* Load fonts */
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:200,400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 /* Dat's Content Start  */
 
-
+.border2x{
+  border: 2px solid blue
+}
+.padding-70{
+  padding-left: 70px;
+  padding-right: 70px;
+}
 /* unvisited link */
 a:link {
   color: red;
@@ -110,11 +116,11 @@ a:active {
 }
 
 body {
-  font-family: var(--font-family-text);
+  /* font-family: var(--font-family-text); */
+  font-family: 'Roboto', sans-serif;
   color: var(--color-text);
-  font-weight: 200;
+  font-weight: 200;  
 }
-
 /* Animation Styles */
 
 @keyframes fadein {
