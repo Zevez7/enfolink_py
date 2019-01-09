@@ -1,6 +1,56 @@
 /* Load fonts */
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:200,400,600');
 
+/* Dat's Content Start  */
+
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.logo {
+  height: auto;
+  width: 15%;
+  min-width: 200px;
+}
+
+.navbar-style {
+  border-bottom: 1px solid gray;
+  padding: 0;
+}
+.nav-item-style{
+  border-left: 1px solid black;
+  padding: 10px;
+  /* border-right: 1px solid black; */
+}
+
+.nav-link {
+  white-space: nowrap;
+
+}
+
+.fs-65 {
+  font-size: 65px
+
+}
+/* Dat's Content End */
+
 /* Variables */
 
 :root {
