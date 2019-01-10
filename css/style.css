@@ -3,32 +3,42 @@
 
 /* Dat's Content Start  */
 
+
 .border2x{
-  border: 2px solid blue
+  /* border: 2px solid blue */
 }
+
 .padding-70{
   padding-left: 70px;
   padding-right: 70px;
 }
-/* unvisited link */
+
+.nav-item-style:hover{
+  background-color: lightgray
+}
+
+.no-right-margin{
+  padding-right: 0 
+}
+/* unvisited link
 a:link {
   color: red;
 }
 
-/* visited link */
+/* visited link
 a:visited {
   color: green;
-}
+} */
 
-/* mouse over link */
+/* mouse over link
 a:hover {
   color: hotpink;
-}
+} */
 
-/* selected link */
+/* selected link
 a:active {
   color: blue;
-}
+} */
 
 .logo {
   height: auto;
@@ -40,15 +50,14 @@ a:active {
   border-bottom: 1px solid gray;
   padding: 0;
 }
-.nav-item-style{
+.nav-item-style {
   border-left: 1px solid black;
-  padding: 10px;
+  /* padding: 10px; */
   /* border-right: 1px solid black; */
 }
 
 .nav-link {
   white-space: nowrap;
-
 }
 
 .fs-65 {

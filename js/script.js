@@ -25,12 +25,16 @@ $(function() {
     }
   });
 
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus')
+  // })
+
   // Modifies modal and injects high resolution image
-  $('#site-modal').on('show.bs.modal', function(event) {
-    $(this)
-      .find('.modal-content img')
-      .attr('src', $(event.relatedTarget).data('highres'));
-  });
+  // $('#site-modal').on('show.bs.modal', function(event) {
+  //   $(this)
+  //     .find('.modal-content img')
+  //     .attr('src', $(event.relatedTarget).data('highres'));
+  // });
 
   //Use smooth scrolling when clicking on navigation
   $('.navbar-nav a:not(.dropdown-toggle)').click(

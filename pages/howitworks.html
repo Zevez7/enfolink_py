@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <!--Must place in front-->
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Enfolink</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-style navbar navbar-expand-md bg-white navbar-light">
+
+      <div class="container-fluid no-right-margin">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo " src="images\logo.png" alt="logo"></a>
+
+        <div class="navbar-nav">
+          <a class="nav-item-style nav-item nav-link" href="pages\howitworks.html">How It Works</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\features.html">Features</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\FAQ.html">FAQ</a>
+          <a class="nav-item-style nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#page-Login">Login</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\signup.html">Sign Up</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group p-1">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+
+            <div class="form-group p-1">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+            </div>
+            <div class="form-group form-check m-1 pb-1">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block p-2">Login</button>
+            <div>
+              <div class="text-center p-2"><a href="#" class="text-muted">Forgot Password</a></div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of modal-->
+
+  <article>
+    <div class="container">
+      <div class="h3 pt-5 font-weight-bold"> How Enfolink Works </div>
+      <HR>
+    </div>
+  </article>
+
+  <article>
+    <div class="container-fluid">
+      <section class="row justify-content-center d-flex align-items-center text-center py-2 m-4 bg-light">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3 ">
+          <div class="h4 font-weight-bold text-nowrap">Step 1: Discover</div>
+          <div class=""> <img src="images\discover.png" alt="discover" style="width: 100px"> </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3 text-center">
+          <ul class="h6 text-left mx-auto" style="max-width:350px">
+            <li>Determine what your patient needs to know during an office visit </li>
+            <li>Search for relevant media on Enfolink </li>
+            <li>Add your own media to Enfolink </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-2">
+          <div class="h6">Search and save media</div>
+          <iframe style="width:95%" class="embed-responsive-item" src="https://www.youtube.com/embed/-00d_EXjhtM"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-2">
+          <div class="h6">Add your own media</div>
+          <iframe style="width:95%" class="embed-responsive-item" src="https://www.youtube.com/embed/-00d_EXjhtM"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="row justify-content-center d-flex align-items-center text-center py-2 m-4 bg-light">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3">
+          <div class="h4 font-weight-bold text-nowrap">Step 2: Bundle</div>
+          <div class=""> <img src="images\bundle.png" alt="discover" style="width: 100px"> </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3 text-center">
+          <ul class="h6 text-left mx-auto" style="max-width:350px">
+            <li>Assemble specific media into an electronic bundle            </li>
+            <li>Print instructions to access bundle </li>
+            <li>Or send direct link via email </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-2">
+          <div class="h6">Creating and printing a bundle</div>
+          <iframe style="width:95%" class="embed-responsive-item" src="https://www.youtube.com/embed/-00d_EXjhtM"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 mx-auto p-2">
+          <div class="btn btn-success btn-block mx-auto" style="width:75%">View Sample PDF</div>
+          <div class="btn btn-success btn-block mx-auto" style="width:75%">View Sample Email</div>
+        </div>
+      </section>
+
+      <section class="row justify-content-center d-flex align-items-center text-center py-2 m-4 bg-light">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3">
+          <div class="h4 font-weight-bold text-nowrap">Step 3: Educate </div>
+          <div class=""> <img src="images\bundle.png" alt="discover" style="width: 100px"> </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-3 text-center">
+          <ul class="h6 text-left mx-auto" style="max-width:350px">
+            <li>Patients access bundles at home </li>
+            <li>Automatically monitor patient compliance while preserving privacy</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 px-0 pb-2">
+          <div class="h6">Patient Accessing Bundle</div>
+          <iframe style="width:95%" class="embed-responsive-item" src="https://www.youtube.com/embed/-00d_EXjhtM"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 mx-auto p-2">
+          <div class="btn btn-success btn-block mx-auto" style="width:75%">View Patient Bundle</div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+
+
+</body>
+
+</html>
