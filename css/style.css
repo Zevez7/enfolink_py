@@ -7,12 +7,31 @@
 @media screen and (max-width: 575px) {
   body {
     padding-top:200px;
-    padding-bottom:50px
   }
+
+}
+body {
+  padding-bottom:50px;
+}
+@media screen and (min-width: 1500px) {
+body{
+  padding-left: 200px;
+  padding-right: 200px;
+}
 }
 
 .bg-lightgray{
-  background-color: gainsboro
+  background-color: #f5f5f5
+}
+
+table {
+  border: 1px solid black;
+  
+}
+
+th, td {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .border2x{
@@ -27,7 +46,7 @@
 }
 
 .nav-item-style:hover{
-  background-color: gainsboro
+  background-color: gainsboro;
 }
 
 .no-right-margin{
@@ -64,10 +83,16 @@ a:active {
 
 .navbar-style {
   /* border-bottom: 1px solid gray; */
+  
 }
 .nav-item-style {
   /* border-left: 1px solid black; */
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+
 }
+
+
 
 .nav-link {
   white-space: nowrap;
