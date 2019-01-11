@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <!--Must place in front-->
   <meta charset="utf-8">
   <!-- <meta http-equiv="refresh" content="5"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,19 +20,19 @@
 
 <body>
   <header>
-    <nav class="navbar-style navbar navbar-expand-md bg-white navbar-light">
+    <nav class="navbar-style navbar fixed-top navbar-expand-sm bg-white navbar-light">
 
       <div class="container-fluid no-right-margin">
         <a class="navbar-brand" href="#page-home">
           <img class="logo" src="images\logo.png" alt="logo"></a>
 
-          <div class="navbar-nav">
-              <a class="nav-item-style nav-item nav-link" href="pages\howitworks.html">How It Works</a>
-              <a class="nav-item-style nav-item nav-link" href="pages\features.html">Features</a>
-              <a class="nav-item-style nav-item nav-link" href="pages\FAQ.html">FAQ</a>
-              <a class="nav-item-style nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#page-Login">Login</a>
-              <a class="nav-item-style nav-item nav-link" href="pages\signup.html">Sign Up</a>
-            </div>
+        <div class="navbar-nav">
+          <a class="nav-item-style nav-item nav-link" href="pages\howitworks.html">How It Works</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\features.html">Features</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\FAQ.html">FAQ</a>
+          <a class="nav-item-style nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#page-Login">Login</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\signup.html">Sign Up</a>
+        </div>
 
       </div>
     </nav>
@@ -70,7 +72,8 @@
         </div>
       </div>
     </div>
-  </div><!--modal end-->
+  </div>
+  <!--modal end-->
 
 
   <article class="top-space border2x">
@@ -163,19 +166,20 @@
         </div>
 
       </div>
-      <div class="text-center py-4">
-        <a href="#"><button type="button" class="btn btn-success btn-lg">Learn More</button></a>
+      <div class="text-center py-4 mb-5">
+        <a href="pages\howitworks.html"><button type="button" class="btn btn-success btn-lg">Learn More</button></a>
       </div>
     </section>
   </article>
 
-  <article class="foot-style border2x bg-dark text-light">
-    <section class="layout-multicolumn container text-left">
-      <div class="row justify-content-center p-4">
+  <!--footer-->
+  <article class="foot-style navbar fixed-bottom border2x bg-dark text-light">
+    <section class="layout-multicolumn justify-content-around container text-left text-nowrap">
+      <div class="row d-flex align-items-center">
         <div class="col-11">
-          <div class="row">
+          <div class="row ">
             <div class="col-10 col-lg-3 col-md-4 col-sm-6">
-              <a href="#" class="text-light px-2 ">Enfolink LLC</a>
+              <a href="index.html" class="text-light px-2 ">Enfolink LLC</a>
             </div>
             <div class="col-10 col-lg-3 col-md-4 col-sm-6">
               <a href="#" class="text-light px-2">Terms of Service</a>
@@ -195,6 +199,7 @@
 
     </section>
   </article>
+  <!--footer end-->
 
 
 
