@@ -6,21 +6,28 @@
 
 @media screen and (max-width: 575px) {
   body {
-    padding-top:200px
+    padding-top:200px;
+    padding-bottom:50px
   }
+}
+
+.bg-lightgray{
+  background-color: gainsboro
 }
 
 .border2x{
   /* border: 2px solid blue */
 }
-
+.shadow {
+  box-shadow: 0px 3px 5px gainsboro;
+}
 .padding-70{
   padding-left: 70px;
   padding-right: 70px;
 }
 
 .nav-item-style:hover{
-  background-color: lightgray
+  background-color: gainsboro
 }
 
 .no-right-margin{
@@ -46,20 +53,20 @@ a:active {
   color: blue;
 } */
 
+
+
 .logo {
   height: auto;
   width: 15%;
   min-width: 200px;
 }
 
+
 .navbar-style {
-  border-bottom: 1px solid gray;
-  padding: 0;
+  /* border-bottom: 1px solid gray; */
 }
 .nav-item-style {
-  border-left: 1px solid black;
-  /* padding: 10px; */
-  /* border-right: 1px solid black; */
+  /* border-left: 1px solid black; */
 }
 
 .nav-link {
