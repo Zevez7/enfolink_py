@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <!--Must place in front-->
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Enfolink</title>
+</head>
+
+<body class="bg-lightgray">
+  <header>
+    <nav class="navbar-style navbar fixed-top navbar-expand-md bg-white navbar-light p-0">
+
+      <div class="container-fluid shadow">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="images\logo.png" alt="logo"></a>
+
+        <div class="navbar-nav pl-sm-0 ">
+          <a class="nav-item-style nav-item nav-link" href="pages\howitworks.html">How It Works</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\features.html">Features</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\FAQ.html">FAQ</a>
+          <a class="nav-item-style nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#page-Login">Login</a>
+          <a class="nav-item-style nav-item nav-link" href="pages\signup.html">Sign Up</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content  bg-lightgray">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group p-1">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+
+            <div class="form-group p-1">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+            </div>
+            <div class="form-group form-check m-1 pb-1">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block p-2">Login</button>
+            <div>
+              <div class="text-center p-2"><a class="text-muted">Forgot Password</a></div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal end-->
+
+  <article class="p-2">
+    <div class="container pt-5">
+      <div class="h3 m-4 font-weight-bold border-bottom "> Sign-Up </div>
+    </div>
+  </article>
+
+  <article mb-5>
+    <div class="container">
+      <div class="h3 text-center"> Select Plan</div>
+
+    </div>
+  </article>
+
+
+  <nav>
+    <div class="container">
+      <div class="row justify-content-center nav" id="nav-tab" role="tablist">
+
+        <div class="active p-3" id="nav-basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="nav-home"
+          aria-selected="true" style="width:400px">
+
+          <div class="font-weight-bold btn btn-outline-success btn-block h2 mb-3 shadow">Basic</div>
+          <div class="hoverborder card cursor shadow">
+            <div class="card-body bg-white">
+              <ul class="list-group list-group-flush h6 text-center ">
+                <li class="list-group-item font-weight-bold"> Free </li>
+                <li class="list-group-item">Create an anonymous account</li>
+                <li class="list-group-item">Create up to 20 UCode daily</li>
+                <li class="list-group-item">Search for media </li>
+                <li class="list-group-item">Save media to folder </li>
+                <li class="list-group-item">Create new folders </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-3" id="nav-verified-tab" data-toggle="tab" href="#verified" role="tab" aria-controls="nav-profile"
+          aria-selected="false" style="width:400px">
+
+          <div class="font-weight-bold btn btn-outline-success btn-block h2 mb-3 shadow">Verified</div>
+          <div class="hoverborder card cursor shadow">
+            <div class="card-body bg-white">
+              <ul class="list-group list-group-flush h6 text-center">
+                <li class="list-group-item font-weight-bold">Free</li>
+                <li class="list-group-item">Everything from basic </li>
+                <li class="list-group-item">Verified as a health care professional </li>
+                <li class="list-group-item">Create up to 50 UCode daily </li>
+                <li class="list-group-item">Ability to contribute media </li>
+                <li class="list-group-item">Upload up to 100MB of media</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="tab-content py-5" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="nav-basic-tab">
+
+      <!--Basic Form-->
+      <article>
+        <div class="container-fluid ">
+          <div class="row justify-content-center">
+            <div class="col-9 col-lg-5 col-md-6 border signupbg pb-3">
+              <form>
+                <div class="h4 text-center pt-3"> Basic </div>
+                <div class="form-group p-1">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Email Address">
+                </div>
+                <div class="form-group p-1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create Password">
+                </div>
+                <div class="form-group p-1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                </div>
+                <div class="form-group form-check mx-3 px-1">
+                  <small id="emailHelp" class="form-text text-muted">
+                    <div class="pb-1">Your email address will be kept confidential. We highly value
+                      your
+                      privacy.</div>
+                    <div class="pb-1">Please check your email inbox to confirm your email address
+                      and
+                      activate your
+                      account.</div>
+                  </small>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check here to indicate that you
+                    have
+                    read and agree to the terms presented in the Terms of Service and Privacy
+                    Policy</label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block p-2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--Basic Form End-->
+
+    </div>
+    <div class="tab-pane fade" id="verified" role="tabpanel" aria-labelledby="nav-verified-tab">
+
+      <!--Basic Form-->
+      <article>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-9 col-lg-5 col-md-6 border signupbg pb-3">
+              <form>
+                <div class="h4 text-center pt-3"> Verified </div>
+                <div class="form-group p-1">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Email Address">
+                  <small id="emailHelp" class="form-text text-muted mx-2">
+                    <div>Email Address Work/Profession</div>
+                  </small>
+                </div>
+                <div class="form-group p-1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create Password">
+                </div>
+                <div class="form-group p-1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                </div>
+                <hr>
+                <div class="form-group p-1">
+                  <input type="username" class="form-control" id="exampleInputPassword1" placeholder="Create Username">
+                </div>
+                <div class="form-group p-1">
+                  <input type="name" class="form-control" id="exampleInputPassword1" placeholder="First Name">
+                </div>
+                <div class="form-group p-1">
+                  <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                </div>
+                <div class="form-group p-1">
+                  <input type="degree" class="form-control" id="exampleInputPassword1" placeholder="Medical Education">
+                  <small id="emailHelp" class="form-text text-muted mx-2">
+                    <div>e.g. Pediatrician, Audiologist, Registered Nurse, Physical Therapist</div>
+                  </small>
+                </div>
+                <div class="form-group p-1">
+                  <input type="profession" class="form-control" id="exampleInputPassword1" placeholder="Profession">
+                  <small id="emailHelp" class="form-text text-muted mx-2">
+                    <div>e.g. MD, AuD, DO, RN, DPT </div>
+                  </small>
+                </div>
+                <div class="form-group form-check mx-3 px-1">
+                  <small id="emailHelp" class="form-text text-muted">
+                    <div class="pb-1">Your email address will be kept confidential. We highly value
+                      your
+                      privacy.</div>
+                    <div class="pb-1">Please check your email inbox to confirm your email address
+                      and
+                      activate your
+                      account.</div>
+                  </small>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Click here to indicate that you
+                    have
+                    read and agree to the terms presented in the Terms of Service and Privacy
+                    Policy</label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block p-2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--Basic Form End-->
+
+    </div>
+  </div>
+
+
+  <!--footer-->
+  <article class="foot-style navbar border2x bg-dark text-light">
+    <section class="layout-multicolumn justify-content-around container text-left text-nowrap">
+      <div class="row d-flex align-items-center">
+        <div class="col-11">
+          <div class="row ">
+            <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+              <a href="index.html" class="text-light px-2 ">Enfolink LLC</a>
+            </div>
+            <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+              <a href="#" class="text-light px-2">Terms of Service</a>
+            </div>
+            <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+              <a href="#" class="text-light px-2">Privacy Policy</a>
+            </div>
+            <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+              <a href="#" class="text-light px-2">About Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <a href="#"><i class="fab fa-facebook fa-2x text-light"></i></a>
+        </div>
+      </div>
+
+    </section>
+  </article>
+  <!--footer end-->
+
+</body>
+
+</html>
