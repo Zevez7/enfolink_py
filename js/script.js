@@ -62,3 +62,17 @@ $(function() {
   ); //smooth scrolling
 }); // Make sure Document loaded
 
+// Side Nav hide/show
+function toggle_class(className) {
+  var elements = document.getElementsByClassName(className);
+
+  if (elements[0].style.display === 'none') {
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.display = 'block';
+    }
+  } else {
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.display = 'none';
+    }
+  }
+}
