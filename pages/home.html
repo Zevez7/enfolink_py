@@ -21,11 +21,11 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-      <div class="cursor shover" onclick="toggle_class('NavExpand')">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:1">
+      <div class="cursor shover px-4" onclick="toggle_class('NavExpandtext')">
         <i class="fas fa-bars fa-2x text-secondary"></i>
       </div>
-      <a class="navbar-brand mx-3" href="index.html">
+      <a class="navbar-brand mx-5" href="index.html">
         <img src="images\logo.png" width="200" height="auto" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -55,119 +55,135 @@
 
       </div>
     </nav>
+  </header>
 
-    <div class="bg-warning float-left">
+  <div class="body-wrapper-100px">
 
-      <ul class="list-group">
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-home fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            Home </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-folder fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            My Collection
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-code fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            My UCodes
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-video fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            My Media
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="far fa-user fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            My Profile
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-cog fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            Account
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-info fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            About Us
-          </div>
-        </li>
-        <li class="list-group-item d-flex">
-          <div class="text-center " style="width: 30px;">
-            <i class="fas fa-book fa-1x"></i>
-          </div>
-          <div class="NavExpand nowrap"  style="z-index: 1; position: absolute; margin-left:35px">
-            Learn
-          </div>
-        </li>
+    <!-- Side NAV -->
+    <div class="float-left sticky-top NavExpand sidebar22">
+
+      <ul class="list-group list-group-flush">
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3-active active-teal">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              Home
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-folder"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              My Collection
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              My UCodes
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              My Media
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              My Profile
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              Account
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-info"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              About Us
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light p-3 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 40px">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-2">
+              Learn
+            </div>
+          </li>
+        </a>
       </ul>
-
     </div>
 
+    <!-- Side NAV End-->
 
-    <div class="container-fluid ">
-      <div class="row mt-2">
+    <article class="p-2">
+      <div class="container">
+        <div class="h3 m-4 font-weight-bold border-bottom "> Frequently Asked Questions </div>
+      </div>
+    </article>
 
-        <div class="col-10 mr-auto bg-info">
-          Container
+    <div class="container-fluid">
+      <div class="row mt-1 justify-content-center">
+
+        <div class="col-10  ">
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
 
 
-  </header>
+    <div class="p-5 m-5 display-3" class="NavExpand nowrap"> Testing toggling of div </div>
 
-  <div class="p-5 m-5">
-    <button onclick="toggle_class('NavExpand')">Click here to hide</button>
-    <button onclick="toggle_class('NavExpand')">Click here to appear</button>
-  </div>
+    <div class="m-5 p-5">
+      <div class="collapse" id="leftmenutoggle">
+        <div class="bg-dark p-4">
+          <h4 class="text-white" Collapsed content>
 
-  <div class="p-5 m-5 display-3" class="NavExpand nowrap"> Testing toggling of div </div>
-
-  <div class="m-5 p-5">
-    <div class="collapse" id="leftmenutoggle">
-      <div class="bg-dark p-4">
-        <h4 class="text-white">Collapsed content</h4>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
+          </h4> <span class="text-muted" Toggleable via the navbar brand.></span>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-  <script>
-
-
-
-
-
-
-  </script>
-
 </body>
-
-
 
 </html>
