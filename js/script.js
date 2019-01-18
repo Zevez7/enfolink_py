@@ -1,8 +1,8 @@
-$(function() {
+$(function () {
   var scrolloffset = 55; //variable for menu height
 
   // When Scrollspy Detects a change
-  $(window).on('activate.bs.scrollspy', function() {
+  $(window).on('activate.bs.scrollspy', function () {
     var hash = $('.site-nav')
       .find('a.active')
       .attr('href');
@@ -38,10 +38,10 @@ $(function() {
 
   //Use smooth scrolling when clicking on navigation
   $('.navbar-nav a:not(.dropdown-toggle)').click(
-    function() {
+    function () {
       if (
         location.pathname.replace(/^\//, '') ===
-          this.pathname.replace(/^\//, '') &&
+        this.pathname.replace(/^\//, '') &&
         location.hostname === this.hostname
       ) {
         var target = $(this.hash);
@@ -66,13 +66,13 @@ $(function() {
 function toggle_class(className) {
   var elements = document.getElementsByClassName(className);
 
-  if (elements[0].style.display === 'none') {
+  if (elements[0].style.display === 'block') {
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = 'block';
+      elements[i].style.display = 'none';
     }
   } else {
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = 'none';
+      elements[i].style.display = 'block';
     }
   }
 }
