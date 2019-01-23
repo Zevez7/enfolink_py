@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <!--Must place in front-->
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Enfolink</title>
+</head>
+
+<body>
+
+  <!-- header/Top Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
+      <div class="cursor shover px-4" onclick="toggle_class('NavExpandtext')">
+        <i class="fas fa-bars fa-2x text-secondary"></i>
+      </div>
+      <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
+        <img src="images\logo.png" width="200" height="auto" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline mx-auto my-2 my-lg-0">
+          <input class="form-control mr-sm-2" style="min-width: 400px" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav p-1 shover">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              DAT
+            </a>
+            <div class="dropdown-menu dropdown-menu-right ">
+              <a href="index.html" class="dropdown-item">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End header/Top Nav -->
+
+  <!-- body-wrapper -->
+  <div class="body-wrapper-100px">
+
+    <!-- Side NAV -->
+    <div class="float-left sticky-top NavExpand sidebar22">
+
+      <ul class="list-group list-group-flush">
+        <a href="pages\home.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Home
+            </div>
+          </li>
+        </a>
+        <a href="pages\mycollection.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2  border-L-3-active active-teal">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-folder"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Collection
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My UCodes
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Media
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Profile
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Account
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-info"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              About Us
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Learn
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <!-- Side NAV End-->
+
+    <!-- bundle button -->
+    <div class="div-button sticky-top shadow">
+      <button type="button" class="btn btn-bundle">
+        </i>5 Bundle Cart</button>
+      <div class="btn-bundle-body bundle-delete-none p-2">
+        <ul class="btn-bundle-ul">
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text ">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+        </ul>
+        <div class="p-2 d-flex justify-content-around">
+          <button type="button" class="btn btn-success">Create</button>
+          <button type="button" class="btn btn-secondary">Clear All</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- bundle button end -->
+
+    <!-- Page Title -->
+    <article class="p-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h3 m-4 font-weight-bold border-bottom text-secondary"> My Collection </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Page Title End -->
+
+    <!--Edit Button-->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <ul class="d-flex flex-wrap pl-0">
+              <li class="collection shover cursor shadow">
+                <i class="fas fa-cut"></i> Move To
+              </li>
+              <li class="collection shover cursor shadow">
+                <i class="far fa-copy"></i> Copy To
+              </li>
+              <li class="collection shover cursor shadow">
+                <i class="fas fa-cube"></i> Bundle
+              </li>
+              <li class="collection shover cursor shadow">
+                <i class="fas fa-trash-alt"></i> Delete
+              </li>
+              <li class="collection shover cursor shadow">
+                <i class="far fa-folder"></i> New Folder
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--Edit Button End-->
+
+    <article>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <ul class="navmycol mb-3 shadow">
+              <li class="d-flex navmycol-list shover">Basic <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              </li>
+              <li class="d-flex navmycol-list shover">Bookmark <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              </li>
+              <li class="d-flex navmycol-list shover">History <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              </li>
+              <li class="d-flex navmycol-list shover">Liked Media <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              </li>
+            </ul>
+
+            <ul class="navmycol shadow">
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="fas fa-folder fa-lg  pr-2"></i>
+                My Folder </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+                Bookmark
+                <div class="mycol-icons">
+                  <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                  <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                  <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Print and Delete</a>
+                    <a class="dropdown-item" href="#">Preview</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-9">
+
+            <div class="my-3">
+              <div class="mycol-chevron-quick-view cursor shover my-1" onclick="toggle_id('quickview')"> <i class="fas fa-chevron-circle-down mychevroncollapse-quick-view"></i>
+                Quick View</div>
+
+              <div class="bg-white shadow" id="quickview">
+                <div class="mycol-title-bar">
+                  <div class="mycol-title-text">Hello Hello Hello Hello Hello</div>
+
+                  <div class="mycol-icons">
+                    <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                    <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                    <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Print and Delete</a>
+                      <a class="dropdown-item" href="#">Preview</a>
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex p-1 text-muted">
+                  <div class="px-1"> Select</div>
+                  <div class="px-1 teal-hover"> All </div>|
+                  <div class="px-1 teal-hover"> None </div>
+                </div>
+                <div class="mycol-body">
+                  <i class="far fa-square checkbox fa-lg"></i>
+                  Hello
+                  Hello
+                  Hello
+                  Hello
+                  Hello
+                  Hello
+                  Hell
+                </div>
+
+              </div>
+            </div>
+
+            <div class="my-3">
+
+
+              <div class="mycol-chevron-pin-board cursor shover my-1" onclick="toggle_id('pinboard')"> <i class="fas fa-chevron-circle-down mychevroncollapse-pin-board"></i>
+                Pin Board</div>
+              <div id="pinboard">
+
+                <div class="bg-white shadow mb-3">
+                  <div class="mycol-title-bar">
+                    <div class="mycol-title-text">Hello Hello Hello Hello Hello</div>
+                    <div class="mycol-icons">
+                      <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                      <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                      <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Print and Delete</a>
+                        <a class="dropdown-item" href="#">Preview</a>
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex p-1 text-muted">
+                    <div class="px-1"> Select</div>
+                    <div class="px-1 teal-hover"> All </div>|
+                    <div class="px-1 teal-hover"> None </div>
+                  </div>
+                  <div class="mycol-body">
+                    <i class="far fa-square checkbox fa-lg"></i>
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hell
+                  </div>
+                </div>
+
+                <div class="bg-white shadow mb-3">
+                  <div class="mycol-title-bar">
+                    <div class="mycol-title-text">Hello Hello Hello Hello Hello</div>
+
+                    <div class="mycol-icons">
+                      <i class="fas fa-info-circle tooltipinfo pl-2"></i>
+                      <i class="fas fa-thumbtack teal-hover pl-2"></i>
+                      <i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Print and Delete</a>
+                        <a class="dropdown-item" href="#">Preview</a>
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex p-1 text-muted">
+                    <div class="px-1"> Select</div>
+                    <div class="px-1 teal-hover"> All </div>|
+                    <div class="px-1 teal-hover"> None </div>
+                  </div>
+                  <div class="mycol-body">
+                    <i class="far fa-square checkbox fa-lg"></i>
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hell
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+  </article>
+
+
+  <article>
+
+
+  </article>
+
+
+
+
+  </div>
+  <!-- end body-wrapper -->
+
+
+</body>
+
+</html>
