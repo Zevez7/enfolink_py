@@ -21,11 +21,11 @@
 <body>
   <!-- header/Top Nav -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:2">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
       <div class="cursor shover px-4" onclick="toggle_class('NavExpandtext')">
         <i class="fas fa-bars fa-2x text-secondary"></i>
       </div>
-      <a class="navbar-brand mx-5" href="index.html">
+      <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
         <img src="images\logo.png" width="200" height="auto" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -42,10 +42,7 @@
               DAT
             </a>
             <div class="dropdown-menu dropdown-menu-right ">
-              <a class="dropdown-item">Action</a>
-              <a class="dropdown-item">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item">Something else here</a>
+              <a href="index.html" class="dropdown-item">Log Out</a>
             </div>
           </li>
         </ul>
@@ -61,7 +58,7 @@
     <div class="float-left sticky-top NavExpand sidebar22">
 
       <ul class="list-group list-group-flush">
-        <a href="" class="list-group-item-action">
+        <a href="pages\home.html" class="list-group-item-action">
           <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3-active active-teal">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-home"></i>
@@ -71,7 +68,7 @@
             </div>
           </li>
         </a>
-        <a href="" class="list-group-item-action">
+        <a href="pages\mycollection.html" class="list-group-item-action">
           <li class="list-group-item d-flex shover bg-light py-3 px-2  border-L-3">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-folder"></i>
@@ -145,6 +142,44 @@
     </div>
     <!-- Side NAV End-->
 
+
+
+    <!-- bundle button -->
+    <div class="div-button sticky-top shadow">
+      <button type="button" class="btn btn-bundle">
+        </i>5 Bundle Cart</button>
+      <div class="btn-bundle-body bundle-delete-none p-2">
+        <ul class="btn-bundle-ul">
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text ">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+          <li class="btn-bundle-li">
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text">CDC Information about antibiotic</div>
+          </li>
+        </ul>
+        <div class="p-2 d-flex justify-content-around">
+          <button type="button" class="btn btn-success">Create</button>
+          <button type="button" class="btn btn-secondary">Clear All</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- bundle button end -->
+
     <!-- Page Title -->
     <article class="p-2">
       <div class="container">
@@ -160,7 +195,7 @@
     <!-- Thumbnail -->
     <article>
       <div class="container-fluid">
-        <div class="row justify-content-start text-left text-secondary">
+        <div class="row justify-content-center text-left text-secondary">
 
           <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
             <div class="card border-0 bg-transparent shover p-2">
@@ -168,64 +203,32 @@
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
                   </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
-            <div class="card border-0 bg-transparent shover p-2">
-              <a href="">
-                <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
-              </a>
-              <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
-                  CDC information about Antibiotic TESTing CDC information about Antibiotic
-                  TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
-                </div>
-              </a>
-              <div class="thumb-user">
-                <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
-                      DAT7MD
-                    </a>
-                  </li>
-                  <li class="thumb-li">
-                    <i class="fas fa-video"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="thumb-stat h5">
-                <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
-                  </li>
-                  <li class="thumb-li">
-                    <i class="fa fa-list-ul"></i> 5
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
@@ -238,29 +241,32 @@
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
@@ -273,29 +279,32 @@
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
@@ -308,146 +317,117 @@
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>       
+          </div>
+
           <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
               </a>
               <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
+                <div class="thumb-title">
                   CDC information about Antibiotic TESTing CDC information about Antibiotic
                   TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
                 </div>
               </a>
               <div class="thumb-user">
                 <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
+                  <li class="thumb-li "><a class="thumb-title" href="">
                       DAT7MD
                     </a>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipvideo">
                     <i class="fas fa-video"></i>
                   </li>
                 </ul>
               </div>
-              <div class="thumb-stat h5">
+              <div class="thumb-stat">
                 <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
                   </li>
-                  <li class="thumb-li">
+                  <li class="thumb-li tooltipcollection">
                     <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover"></i>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
-            <div class="card border-0 bg-transparent shover p-2">
-              <a href="">
-                <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
-              </a>
-              <a class="thumb-title" href="#">
-                <div class="thumb-title h7">
-                  CDC information about Antibiotic TESTing CDC information about Antibiotic
-                  TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
-                </div>
-              </a>
-              <div class="thumb-user">
-                <ul class="thumb-ul">
-                  <li class="thumb-li h6 "><a class="thumb-title" href="">
-                      DAT7MD
-                    </a>
-                  </li>
-                  <li class="thumb-li">
-                    <i class="fas fa-video"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="thumb-stat h5">
-                <ul class="thumb-ul">
-                  <li class="thumb-li">
-                    <i class="fa fa-thumbs-up"></i> 100%
-                  </li>
-                  <li class="thumb-li">
-                    <i class="fa fa-list-ul"></i> 5
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
+        </div>
+      </div>
     </article>
     <!-- Thumbnail End -->
-
-
-
-  </div>
-  </div>
-
-
   </div>
   <!-- end body-wrapper -->
 

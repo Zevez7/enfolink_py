@@ -76,3 +76,70 @@ function toggle_class(className) {
     }
   }
 }
+
+
+function toggle_id(idname) {
+  var x = document.getElementById(idname);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+
+}
+
+
+// Tooltip Initiation BS4
+
+
+
+
+
+$(document).ready(function () {
+  
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+  $('.tooltipvideo').tooltip({ title: "Video", placement: "bottom" });
+  $('.tooltipcollection').tooltip({ title: "Saved", placement: "bottom" });
+  $('.tooltipinfo').tooltip({ title: "Info", placement: "bottom" });
+  $('.tooltipbundle').tooltip({ title: "Bundle", placement: "bottom" });
+
+  $(".btn-bundle").click(function () {
+    $(".btn-bundle, .btn-bundle-body").toggleClass("expand-me");
+  });
+
+  $(".btn-bundle").click(function () {
+    $(".bundle-delete-none").toggleClass("bundle-delete-block");
+  });
+
+  $(".fa-cube").click(function () {
+    $(this).toggleClass("active-teal");
+  });
+
+  $(".fa-thumbtack").click(function () {
+    $(this).toggleClass("active-teal");
+  });
+
+  $(".checkbox").click(function () {
+    $(this).toggleClass("fa-check-square fa-square");
+  });
+
+  $(".mycol-chevron-pin-board").click(function () {
+    $(".mychevroncollapse-pin-board").toggleClass("fa-chevron-circle-down fa-chevron-circle-right");
+  });
+
+  $(".mycol-chevron-quick-view").click(function () {
+    $(".mychevroncollapse-quick-view").toggleClass("fa-chevron-circle-down fa-chevron-circle-right");
+  });
+
+
+});
+
+
+// $(document).ready(function() {
+//   $(".mycol-chevron").click(function() {
+//     $(this).find('.fa-chevron-circle-down,.fa-chevron-circle-right').toggleClass('fa-chevron-circle-down').toggleClass('fa-chevron-circle-right');
+//   });
+// });

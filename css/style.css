@@ -15,7 +15,7 @@ body {
 
 .body-wrapper-100px {
     padding-top: 70px;
-    padding-left: 80px;
+    padding-left: 60px;
 }
 
 .list-group-item-action {
@@ -36,6 +36,7 @@ body {
 }
 
 /* Thumbnail */
+
 .h7 {
     font-size: 0.9em
 }
@@ -45,7 +46,9 @@ body {
     line-height: 1.4em;
     overflow: hidden;
     padding: 0;
+    font-size: 1rem
 }
+
 a.thumb-title:link {
     color: #6c757d
 }
@@ -61,40 +64,188 @@ a.thumb-title:hover {
 a.thumb-title:active {
     color: #6c757d
 }
+
 .thumb-user {
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 1.25rem
+    font-size: 1.1rem
 }
+
+.thumb-stat {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 1.2rem
+}
+
 .thumb-ul {
     display: flex;
-    align-items: stretch; /* Default */
-    justify-content: space-between; 
+    align-items: stretch;
+    /* Default */
+    justify-content: space-between;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-.thumb-li{
+
+.thumb-li {
     display: block;
-    flex: 0 1 auto; /* Default */
+    flex: 0 1 auto;
+    /* Default */
     list-style-type: none;
 }
-.pull-right{
-    float: right !important;
-}
-.pull-left{
-    float: left !important;
+
+/* Tooltip */
+
+.tooltip>.tooltip-inner {
+    background-color: white;
+    color: black;
+    border: 0;
+    padding: 4px !important;
+    font-size: 15px;
+    display: block;
+    box-shadow: 0px 3px 5px gray;
+    z-index: 4;
 }
 
-/* Thumbnail End */
+.tooltip.show {
+    opacity: 1;
+}
+
+/* Bundle Button */
+
+.div-button {
+    float: left;
+    z-index: 2;
+    position: fixed;
+    top: 90px;
+    right: 0px;
+    height: auto;
+}
+
+.btn-bundle {
+    background: #17baa3;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+}
+
+.expand-me {
+    width: 250px !important;
+}
+
+.btn-bundle-body {
+    background-color: white;
+    color: #6c757d;
+    width: 150px;
+}
+
+ul.btn-bundle-ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li.btn-bundle-li {
+    flex: 0 1 auto;
+    list-style-type: none;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 2px;
+    padding: 1px;
+}
+
+.btn-bundle-text {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.bundle-delete-none {
+    display: none;
+}
+
+.bundle-delete-block {
+    display: block;
+}
+
+/* My Collection */
+
+li.collection {
+    list-style-type: none;
+    border: 1px solid gainsboro !important;
+    padding: 6px 9px;
+    margin: 4px 7px;
+    background-color: white;
+    color: #6c757d;
+}
+
+ul.navmycol {
+    list-style-type: none;
+    background: white;
+    border: 1px solid gainsboro !important;
+    margin: 0;
+    padding: 0;
+}
+
+li.navmycol-list {
+    padding: 0.4em;
+}
+
+li.navmycol-list2 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left:0.4em;
+    padding-right:0.4em;
+
+
+}
+
+div.navmycol-pin {
+    position: absolute;
+    right: 1.8em;
+}
+
+div.mycol-chevron {
+    font-size: 1.2em
+}
+
+.mycol-title-bar {
+    height: 3em;
+    line-height: 1.2em;
+    overflow: hidden;
+    background-color: gainsboro;
+    padding: 0.2em;
+}
+
+.mycol-title-text {
+    float: left;
+    padding: 0.4em;
+    width: 85%;
+}
+
+.mycol-icons {
+    position: absolute;
+    right: 20px;
+    padding: 0.4em;
+    font-size: 1.2em
+}
+
+.mycol-body {
+    padding: 0.6em;
+    font-size: 1em;
+}
+
+.teal-hover:hover {
+    color: #17baa3;
+    cursor: pointer
+}
 
 .NavExpandtext {
     display: none;
 }
 
 .active-teal {
-    background: #17baa3;
-    color: #17baa3
+    color: #17baa3;
+    cursor: pointer
 }
 
 .anchor {
@@ -153,7 +304,6 @@ td {
 .shover:hover {
     background-color: gainsboro !important;
 }
-
 
 /* a.side-nav-link:link {
     color: black
