@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <base href="C:\Users\datgu\Desktop\javascript\Enfolink_py\" />
   <!--Must place in front-->
   <meta charset="utf-8">
   <!-- <meta http-equiv="refresh" content="5"> -->
@@ -15,6 +15,9 @@
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <link rel="stylesheet" href="js\lib\jquery-ui-1.12.1\jquery-ui.css">
+  <script src="js\lib\jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+  <script src="js\lib\jquery-ui-1.12.1\jquery-ui.js"></script>
   <title>Enfolink</title>
 </head>
 
@@ -22,7 +25,7 @@
   <!-- header/Top Nav -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
-      <div class="cursor shover px-4" onclick="toggle_class('NavExpandtext')">
+      <div class="cursor shover px-4" id="expandSidemenu">
         <i class="fas fa-bars fa-2x text-secondary"></i>
       </div>
       <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
@@ -146,8 +149,12 @@
 
     <!-- bundle button -->
     <div class="div-button sticky-top shadow">
-      <button type="button" class="btn btn-bundle">
-        </i>5 Bundle Cart</button>
+      <button type="button" class="btn btn-bundle" onclick="Button_inner_text('bundle-cart2')">
+        <div class="row nowrap inline-block justify-content-center">
+          <span id="clicks">0</span> &nbsp
+          <div id="bundle-cart2"> Open Bundle Cart</div>
+        </div>
+      </button>
       <div class="btn-bundle-body bundle-delete-none p-2">
         <ul class="btn-bundle-ul">
           <li class="btn-bundle-li">
@@ -197,7 +204,45 @@
       <div class="container-fluid">
         <div class="row justify-content-center text-left text-secondary">
 
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
+            <div class="card border-0 bg-transparent shover p-2">
+              <a href="">
+                <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
+              </a>
+              <a class="thumb-title" href="#">
+                <div class="thumb-title">
+                  CDC information about Antibiotic TESTing CDC information about Antibiotic
+                  TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
+                </div>
+              </a>
+              <div class="thumb-user">
+                <ul class="thumb-ul">
+                  <li class="thumb-li "><a class="thumb-title" href="">
+                      DAT7MD
+                    </a>
+                  </li>
+                  <li class="thumb-li tooltipvideo">
+                    <i class="fas fa-video"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="thumb-stat">
+                <ul class="thumb-ul">
+                  <li class="thumb-li tooltipinfo">
+                    <i class="fas fa-info-circle"></i>
+                  </li>
+                  <li class="thumb-li tooltipcollection">
+                    <i class="fa fa-list-ul"></i> 5
+                  </li>
+                  <li class="thumb-li tooltipbundle">
+                    <i class="fas fa-cube teal-hover" id="fa-cube"></i> Testing
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
@@ -235,7 +280,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
@@ -273,7 +318,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
@@ -311,7 +356,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
@@ -349,45 +394,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
-            <div class="card border-0 bg-transparent shover p-2">
-              <a href="">
-                <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
-              </a>
-              <a class="thumb-title" href="#">
-                <div class="thumb-title">
-                  CDC information about Antibiotic TESTing CDC information about Antibiotic
-                  TESTing CDC information about Antibiotic TESTing CDC information about Antibiotic TESTing
-                </div>
-              </a>
-              <div class="thumb-user">
-                <ul class="thumb-ul">
-                  <li class="thumb-li "><a class="thumb-title" href="">
-                      DAT7MD
-                    </a>
-                  </li>
-                  <li class="thumb-li tooltipvideo">
-                    <i class="fas fa-video"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="thumb-stat">
-                <ul class="thumb-ul">
-                  <li class="thumb-li tooltipinfo">
-                    <i class="fas fa-info-circle"></i>
-                  </li>
-                  <li class="thumb-li tooltipcollection">
-                    <i class="fa fa-list-ul"></i> 5
-                  </li>
-                  <li class="thumb-li tooltipbundle">
-                    <i class="fas fa-cube teal-hover"></i>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-2 col-md-3 col-sm-12 m-1">
+          <div class="col-12 col-lg-2 col-md-3 col-sm-12">
             <div class="card border-0 bg-transparent shover p-2">
               <a href="">
                 <img src="images\website_thumbnail.png " class="card-img-top pb-1" alt="...">
@@ -428,6 +435,11 @@
       </div>
     </article>
     <!-- Thumbnail End -->
+
+    <button type="button" onClick="addClick()">Add Click me</button>
+    <button type="button" onClick="subClick()">Sub Click me</button>
+
+
   </div>
   <!-- end body-wrapper -->
 

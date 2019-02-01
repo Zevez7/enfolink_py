@@ -62,6 +62,23 @@ $(function () {
   ); //smooth scrolling
 }); // Make sure Document loaded
 
+// Dat's Code --------------------------------------
+
+// Top Nav 
+
+// (function () {
+//   if (window.location.href.indexOf("howitworks.html")) {
+//     $('li .nav-item').addClass('active');
+//   }})();
+
+
+// function () {
+//   if (document.URL.contains("howitworks.html")) {
+//     $('li .nav-item').addClass('active');
+//   }
+// }
+
+
 // Side Nav hide/show
 function toggle_class(className) {
   var elements = document.getElementsByClassName(className);
@@ -85,21 +102,80 @@ function toggle_id(idname) {
   } else {
     x.style.display = 'none';
   }
+}
 
+function Button_inner_text(idname) {
+  x = document.getElementById(idname);
+  if (x.innerHTML === "Open Bundle Cart") {
+    x.innerHTML = "Close Bundle Cart";
+  } else {
+    x.innerHTML = "Open Bundle Cart";
+  }
 }
 
 
+
+// function button_click() {
+//   if ($(".fa-cube").hasClass(".active-teal")) {
+//     clicks += 1;
+//     document.getElementById("clicks").innerHTML = clicks;
+//   } else {
+//     clicks -= 1;
+//     document.getElementById("clicks").innerHTML = clicks;
+//   }
+
+
+
+
+var clicks = 0;
+
+
+function addClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+}
+
+function subClick() {
+  clicks -= 1;
+  document.getElementById("clicks").innerHTML = clicks;
+}
+/*
+
+1. Check the page's address
+  window.location.href.indexOf(value)
+2. If the page's address matches one of the links
+
+3. It should be highlighted
+4. All others should not be highlighted
+
+*/
 // Tooltip Initiation BS4
-
-
-
-
-
-$(document).ready(function () {
-  
+// $(".fa-cube").one("click", addBundle);
+/// 
+//
 $(function () {
+
+
+  //   if (window.location.href.indexOf(value) > -1) {
+  //     $('li.nav-item').addClass('active');
+  // a[href=pages\\" + value + ".html]"
+  //   }
+  // });
+
+  x = ["howitworks", "FAQ", "signup", "features", "Signup"];
+
+  $.each(x, function (_index, value) {
+    if (window.location.href.indexOf(value) > -1) {
+      $("li." + value ).addClass('active');
+    }
+  });
+
+  $("#expandSidemenu").click(function () {
+    $(".NavExpandtext").toggle(100, "swing");
+  });
+
+
   $('[data-toggle="tooltip"]').tooltip();
-});
 
   $('.tooltipvideo').tooltip({ title: "Video", placement: "bottom" });
   $('.tooltipcollection').tooltip({ title: "Saved", placement: "bottom" });
@@ -115,12 +191,15 @@ $(function () {
   });
 
   $(".fa-cube").click(function () {
-    $(this).toggleClass("active-teal");
-  });
+      $(this).toggleClass("active-teal");
+    }
+  );
 
-  $(".fa-thumbtack").click(function () {
-    $(this).toggleClass("active-teal");
-  });
+  $(".fa-thumbtack").click(
+    function () {
+      $(this).toggleClass("active-teal");
+    }
+  );
 
   $(".checkbox").click(function () {
     $(this).toggleClass("fa-check-square fa-square");
@@ -133,6 +212,13 @@ $(function () {
   $(".mycol-chevron-quick-view").click(function () {
     $(".mychevroncollapse-quick-view").toggleClass("fa-chevron-circle-down fa-chevron-circle-right");
   });
+
+  $("li.shover").click(function () {
+    $(this).toggleClass("bg-teal");
+  });
+
+  $('li .nav-item').addClass('active');
+
 
 
 });

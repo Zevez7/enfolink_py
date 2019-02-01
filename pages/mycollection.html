@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <base href="C:\Users\datgu\Desktop\python\Enfolink_py\" />
+  <base href="C:\Users\datgu\Desktop\javascript\Enfolink_py\" />
   <!--Must place in front-->
   <meta charset="utf-8">
   <!-- <meta http-equiv="refresh" content="5"> -->
@@ -145,8 +145,8 @@
 
     <!-- bundle button -->
     <div class="div-button sticky-top shadow">
-      <button type="button" class="btn btn-bundle">
-        </i>5 Bundle Cart</button>
+      <button type="button" class="btn btn-bundle"  onclick="Button_inner_text('bundle-cart2')">
+        <div id="bundle-cart2">Open Bundle Cart</div></button>
       <div class="btn-bundle-body bundle-delete-none p-2">
         <ul class="btn-bundle-ul">
           <li class="btn-bundle-li">
@@ -223,8 +223,9 @@
 
     <article>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-3">
+        <div class="row justify-content-center">
+          <!-- my col nav bar -->
+          <div class="col-lg-3 col-md-4 col-sm-12 col-12">
             <ul class="navmycol mb-3 shadow">
               <li class="d-flex navmycol-list shover">Basic <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
               </li>
@@ -325,7 +326,10 @@
               </li>
             </ul>
           </div>
-          <div class="col-9">
+          <!-- my col nav bar end-->
+
+          <!-- my col body -->
+          <div class="col-lg-6 col-md-8 col-sm-12 col-12">
 
             <div class="my-3">
               <div class="mycol-chevron-quick-view cursor shover my-1" onclick="toggle_id('quickview')"> <i class="fas fa-chevron-circle-down mychevroncollapse-quick-view"></i>
@@ -447,6 +451,8 @@
 
 
           </div>
+          <!-- my col body end-->
+
 
         </div>
       </div>
