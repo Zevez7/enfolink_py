@@ -66,33 +66,21 @@ $(function () {
 
 // Top Nav 
 
-// (function () {
-//   if (window.location.href.indexOf("howitworks.html")) {
-//     $('li .nav-item').addClass('active');
-//   }})();
-
-
-// function () {
-//   if (document.URL.contains("howitworks.html")) {
-//     $('li .nav-item').addClass('active');
-//   }
-// }
-
 
 // Side Nav hide/show
-function toggle_class(className) {
-  var elements = document.getElementsByClassName(className);
+// function toggle_class(className) {
+//   var elements = document.getElementsByClassName(className);
 
-  if (elements[0].style.display === 'block') {
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = 'none';
-    }
-  } else {
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = 'block';
-    }
-  }
-}
+//   if (elements[0].style.display === 'block') {
+//     for (var i = 0; i < elements.length; i++) {
+//       elements[i].style.display = 'none';
+//     }
+//   } else {
+//     for (var i = 0; i < elements.length; i++) {
+//       elements[i].style.display = 'block';
+//     }
+//   }
+// }
 
 
 function toggle_id(idname) {
@@ -155,25 +143,34 @@ function subClick() {
 //
 $(function () {
 
-
-  //   if (window.location.href.indexOf(value) > -1) {
-  //     $('li.nav-item').addClass('active');
-  // a[href=pages\\" + value + ".html]"
-  //   }
-  // });
-
   x = ["howitworks", "FAQ", "signup", "features", "Signup"];
 
   $.each(x, function (_index, value) {
     if (window.location.href.indexOf(value) > -1) {
-      $("li." + value ).addClass('active');
+      $("li." + value).addClass('active');
     }
   });
 
-  $("#expandSidemenu").click(function () {
-    $(".NavExpandtext").toggle(100, "swing");
+  x = ["home", "mycollection", "myucodes", "mymedia", "myprofile", "myaccount", "aboutus", "learn"];
+
+  $.each(x, function (_index, value) {
+    if (window.location.href.indexOf(value) > -1) {
+      $("li." + value).removeClass('border-L-3');
+      $("li." + value).addClass('border-active active-teal');
+    }
   });
 
+  $(".mycol-chevron-quick-view").click(function () {
+    $("#quickview").toggle(100);
+  });
+
+  $(".mycol-chevron-pin-board ").click(function () {
+    $("#pinboard").toggle(100);
+  });
+
+  $("#expandSidemenu").click(function () {
+    $(".NavExpandtext").toggle(100);
+  });
 
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -182,24 +179,22 @@ $(function () {
   $('.tooltipinfo').tooltip({ title: "Info", placement: "bottom" });
   $('.tooltipbundle').tooltip({ title: "Bundle", placement: "bottom" });
 
+
   $(".btn-bundle").click(function () {
     $(".btn-bundle, .btn-bundle-body").toggleClass("expand-me");
   });
 
   $(".btn-bundle").click(function () {
-    $(".bundle-delete-none").toggleClass("bundle-delete-block");
+    $(".btn-bundle-body").toggle();
   });
 
   $(".fa-cube").click(function () {
-      $(this).toggleClass("active-teal");
-    }
-  );
+    $(this).toggleClass("active-teal");
+  });
 
-  $(".fa-thumbtack").click(
-    function () {
-      $(this).toggleClass("active-teal");
-    }
-  );
+  $(".fa-thumbtack").click(function () {
+    $(this).toggleClass("active-teal");
+  });
 
   $(".checkbox").click(function () {
     $(this).toggleClass("fa-check-square fa-square");
@@ -213,19 +208,10 @@ $(function () {
     $(".mychevroncollapse-quick-view").toggleClass("fa-chevron-circle-down fa-chevron-circle-right");
   });
 
-  $("li.shover").click(function () {
-    $(this).toggleClass("bg-teal");
+
+  $('li.quickviewclick').click(function () {
+    $('li.quickviewclick').removeClass('bg-teal');
+    $(this).addClass('bg-teal');
   });
 
-  $('li .nav-item').addClass('active');
-
-
-
 });
-
-
-// $(document).ready(function() {
-//   $(".mycol-chevron").click(function() {
-//     $(this).find('.fa-chevron-circle-down,.fa-chevron-circle-right').toggleClass('fa-chevron-circle-down').toggleClass('fa-chevron-circle-right');
-//   });
-// });

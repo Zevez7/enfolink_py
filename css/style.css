@@ -118,7 +118,7 @@ a.thumb-title:active {
 /* Bundle Button */
 
 .div-button {
-    float: left;
+    float: right;
     z-index: 2;
     position: fixed;
     top: 90px;
@@ -141,7 +141,8 @@ a.thumb-title:active {
 .btn-bundle-body {
     background-color: white;
     color: #6c757d;
-    width: 150px;
+    width: 250px;
+    display: none;
 }
 
 ul.btn-bundle-ul {
@@ -162,10 +163,6 @@ li.btn-bundle-li {
 .btn-bundle-text {
     white-space: nowrap;
     display: inline-block;
-}
-
-.bundle-delete-none {
-    display: none;
 }
 
 .bundle-delete-block {
@@ -244,9 +241,9 @@ div.mycol-chevron {
     cursor: pointer
 }
 
-/* .NavExpandtext {
+.NavExpandtext {
     display: none;
-} */
+}
 
 .active-teal {
     color: #17baa3;
@@ -260,7 +257,7 @@ div.mycol-chevron {
     visibility: hidden;
 }
 
-.border-L-3-active {
+.border-active {
     border-left: 5px solid #17baa3 !important
 }
 

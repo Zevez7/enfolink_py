@@ -15,15 +15,17 @@
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <link rel="stylesheet" href="js\lib\jquery-ui-1.12.1\jquery-ui.css">
+  <script src="js\lib\jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+  <script src="js\lib\jquery-ui-1.12.1\jquery-ui.js"></script>
   <title>Enfolink</title>
 </head>
 
 <body>
-
   <!-- header/Top Nav -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
-      <div class="cursor shover px-4" onclick="toggle_class('NavExpandtext')">
+      <div class="cursor shover px-4" id="expandSidemenu">
         <i class="fas fa-bars fa-2x text-secondary"></i>
       </div>
       <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
@@ -60,7 +62,7 @@
 
       <ul class="list-group list-group-flush">
         <a href="pages\home.html" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 home">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-home"></i>
             </div>
@@ -70,7 +72,7 @@
           </li>
         </a>
         <a href="pages\mycollection.html" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2  border-L-3-active active-teal">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mycollection">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-folder"></i>
             </div>
@@ -80,7 +82,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myucodes">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-code"></i>
             </div>
@@ -90,7 +92,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mymedia">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-video"></i>
             </div>
@@ -100,7 +102,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myprofile">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="far fa-user"></i>
             </div>
@@ -110,7 +112,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myaccount">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-cog"></i>
             </div>
@@ -120,7 +122,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 aboutus">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-info"></i>
             </div>
@@ -130,7 +132,7 @@
           </li>
         </a>
         <a href="" class="list-group-item-action">
-          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 learn">
             <div class="text-center h4 mb-0" style="width: 35px">
               <i class="fas fa-book"></i>
             </div>
@@ -145,28 +147,32 @@
 
     <!-- bundle button -->
     <div class="div-button sticky-top shadow">
-      <button type="button" class="btn btn-bundle"  onclick="Button_inner_text('bundle-cart2')">
-        <div id="bundle-cart2">Open Bundle Cart</div></button>
+      <button type="button" class="btn btn-bundle" onclick="Button_inner_text('bundle-cart2')">
+        <div class="row nowrap inline-block justify-content-center">
+          <span id="clicks">0</span> &nbsp
+          <div id="bundle-cart2"> Open Bundle Cart</div>
+        </div>
+      </button>
       <div class="btn-bundle-body bundle-delete-none p-2">
         <ul class="btn-bundle-ul">
           <li class="btn-bundle-li">
-            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
             <div class="btn-bundle-text ">CDC Information about antibiotic</div>
           </li>
           <li class="btn-bundle-li">
-            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
             <div class="btn-bundle-text">CDC Information about antibiotic</div>
           </li>
           <li class="btn-bundle-li">
-            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
             <div class="btn-bundle-text">CDC Information about antibiotic</div>
           </li>
           <li class="btn-bundle-li">
-            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
             <div class="btn-bundle-text">CDC Information about antibiotic</div>
           </li>
           <li class="btn-bundle-li">
-            <div class="btn-bundle-text active-teal2 cursor"><i class="fas fa-times"></i></div>
+            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
             <div class="btn-bundle-text">CDC Information about antibiotic</div>
           </li>
         </ul>
@@ -227,20 +233,20 @@
           <!-- my col nav bar -->
           <div class="col-lg-3 col-md-4 col-sm-12 col-12">
             <ul class="navmycol mb-3 shadow">
-              <li class="d-flex navmycol-list shover">Basic <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              <li class="quickviewclick d-flex navmycol-list shover">Basic <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
               </li>
-              <li class="d-flex navmycol-list shover">Bookmark <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              <li class="quickviewclick d-flex navmycol-list shover">Bookmark <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
               </li>
-              <li class="d-flex navmycol-list shover">History <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              <li class="quickviewclick d-flex navmycol-list shover">History <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
               </li>
-              <li class="d-flex navmycol-list shover">Liked Media <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
+              <li class="quickviewclick d-flex navmycol-list shover">Liked Media <div class="navmycol-pin"><i class="fas fa-thumbtack teal-hover"></i></div>
               </li>
             </ul>
 
             <ul class="navmycol shadow">
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="fas fa-folder fa-lg  pr-2"></i>
+              <li class="d-flex navmycol-list2 shover align-items-center"></i>
                 My Folder </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -254,7 +260,7 @@
                   </div>
                 </div>
               </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -268,7 +274,7 @@
                   </div>
                 </div>
               </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -282,7 +288,7 @@
                   </div>
                 </div>
               </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -296,7 +302,7 @@
                   </div>
                 </div>
               </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -310,7 +316,7 @@
                   </div>
                 </div>
               </li>
-              <li class="d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
+              <li class="quickviewclick d-flex navmycol-list2 shover align-items-center"><i class="far fa-square checkbox fa-lg  pr-1"></i>
                 Bookmark
                 <div class="mycol-icons">
                   <i class="fas fa-info-circle tooltipinfo pl-2"></i>
@@ -332,7 +338,7 @@
           <div class="col-lg-6 col-md-8 col-sm-12 col-12">
 
             <div class="my-3">
-              <div class="mycol-chevron-quick-view cursor shover my-1" onclick="toggle_id('quickview')"> <i class="fas fa-chevron-circle-down mychevroncollapse-quick-view"></i>
+              <div class="mycol-chevron-quick-view cursor shover my-1"> <i class="fas fa-chevron-circle-down mychevroncollapse-quick-view"></i>
                 Quick View</div>
 
               <div class="bg-white shadow" id="quickview">
@@ -373,7 +379,7 @@
             <div class="my-3">
 
 
-              <div class="mycol-chevron-pin-board cursor shover my-1" onclick="toggle_id('pinboard')"> <i class="fas fa-chevron-circle-down mychevroncollapse-pin-board"></i>
+              <div class="mycol-chevron-pin-board cursor shover my-1"> <i class="fas fa-chevron-circle-down mychevroncollapse-pin-board"></i>
                 Pin Board</div>
               <div id="pinboard">
 
