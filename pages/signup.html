@@ -75,7 +75,8 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Remember Me</label>
             </div>
-            <a class="btn btn-success btn-block p-2" href="pages\home.html">Login</a>            <div>
+            <a class="btn btn-success btn-block p-2" href="pages\home.html">Login</a>
+            <div>
               <div class="text-center p-2"><a class="text-muted">Forgot Password</a></div>
             </div>
           </form>
@@ -94,172 +95,194 @@
 
   <article mb-5>
     <div class="container">
-      <div class="h3 text-center"> Select Plan</div>
+      <div class="h3 text-center"> Select Option</div>
 
     </div>
   </article>
 
+  <!--two buttons-->
+  <div class="container">
+    <div class="row justify-content-center nav">
 
-  <nav>
-    <div class="container">
-      <div class="row justify-content-center nav" id="nav-tab" role="tablist">
+      <div class="col-10 col-lg-5 col-md-5 col-sm-10 m-4" style="width:40%">
+        <button class="btn btn-success btn-block shadow basicbtn">BASIC</button>
+        <ul class="list-group basic list-group-flush h6 text-center cursor border-green">
+          <li class="list-group-item font-weight-bold"> Free </li>
+          <li class="list-group-item">Create an anonymous account</li>
+          <li class="list-group-item">Create up to 20 UCode daily</li>
+          <li class="list-group-item">Search for media </li>
+          <li class="list-group-item">Save media to folder </li>
+          <li class="list-group-item">Create new folders </li>
+        </ul>
+      </div>
 
-        <div class="active p-3" id="nav-basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="nav-home"
-          aria-selected="true" style="width:400px">
+      <div class="col-10 col-lg-5 col-md-5 col-sm-10 m-4" style="width:40%">
+        <button class="btn btn-success btn-block shadow verifiedbtn">VERIFIED</button>
+        <ul class="list-group verified list-group-flush h6 text-center cursor">
+          <li class="list-group-item font-weight-bold">Free</li>
+          <li class="list-group-item">Everything from basic </li>
+          <li class="list-group-item">Verified as a health care professional </li>
+          <li class="list-group-item">Create up to 50 UCode daily </li>
+          <li class="list-group-item">Ability to contribute media </li>
+          <li class="list-group-item">Upload up to 100MB of media</li>
+        </ul>
+      </div>
 
-          <div class="font-weight-bold btn btn-outline-success btn-block h2 mb-3 shadow">Basic</div>
-          <div class="hoverborder card cursor shadow">
-            <div class="card-body bg-white">
-              <ul class="list-group list-group-flush h6 text-center ">
-                <li class="list-group-item font-weight-bold"> Free </li>
-                <li class="list-group-item">Create an anonymous account</li>
-                <li class="list-group-item">Create up to 20 UCode daily</li>
-                <li class="list-group-item">Search for media </li>
-                <li class="list-group-item">Save media to folder </li>
-                <li class="list-group-item">Create new folders </li>
-              </ul>
+    </div>
+  </div>
+  <!---2 button ends -->
+
+  <article>
+    <div class="container-fluid ">
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-6 col-md-7 col-sm-10 border signupbg pb-3 my-5">
+
+          <!-- Basic Form -->
+          <form class="toggle-form basic" id="basicform">
+            <div class="h4 text-center py-3"> BASIC </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
             </div>
-          </div>
-
-        </div>
-        <div class="p-3" id="nav-verified-tab" data-toggle="tab" href="#verified" role="tab" aria-controls="nav-profile"
-          aria-selected="false" style="width:400px">
-
-          <div class="font-weight-bold btn btn-outline-success btn-block h2 mb-3 shadow">Verified</div>
-          <div class="hoverborder card cursor shadow">
-            <div class="card-body bg-white">
-              <ul class="list-group list-group-flush h6 text-center">
-                <li class="list-group-item font-weight-bold">Free</li>
-                <li class="list-group-item">Everything from basic </li>
-                <li class="list-group-item">Verified as a health care professional </li>
-                <li class="list-group-item">Create up to 50 UCode daily </li>
-                <li class="list-group-item">Ability to contribute media </li>
-                <li class="list-group-item">Upload up to 100MB of media</li>
-              </ul>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
             </div>
-          </div>
+            <div class="form-group row">
+              <label for="inputPassword3confirm" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3confirm" placeholder="Confirm Password">
+              </div>
+            </div>
+
+            <div class="form-text p-3 mb-3 readonly">
+              <div>Your email address will be kept confidential. We highly value
+                your
+                privacy.</div>
+              <div>Please check your email inbox to confirm your email address
+                and
+                activate your
+                account.</div>
+            </div>
+
+
+            <div class="form-group row">
+              <div class="col-sm-2">Checkbox</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Click here to indicate that you
+                    have
+                    read and agree to the terms presented in the Terms of Service and Privacy
+                    Policy
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-block p-2 mx-auto" style="max-width: 50%">Submit</button>
+          </form>
+          <!-- Basic Form End -->
+
+          <!--Verified Form-->
+
+          <form class="toggle-form verified" style="display:none" id="verifiedform">
+            <div class="h4 text-center py-3"> VERIFIED </div>
+            <div class="form-group row">
+              <label for="inputEmailverified" class="col-sm-2 col-form-label">Work Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmailverified" placeholder="Work Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPasswordverified" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPasswordverified" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3confirmverified" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3confirmverified" placeholder="Confirm Password">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="Createusername" class="col-sm-2 col-form-label">Create Username</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="Createusername" placeholder="Create Username">
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="Medical Education" class="col-sm-2 col-form-label">Medical Education</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="Medical Education" placeholder="Medical Education">
+              </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Profession" class="col-sm-2 col-form-label">Profession</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Profession" placeholder="Profession">
+                </div>
+              </div>
+
+
+            <div class="form-text p-3 mb-3 readonly">
+              <div>Your email address will be kept confidential. We highly value
+                your
+                privacy.</div>
+              <div>Please check your email inbox to confirm your email address
+                and
+                activate your
+                account.</div>
+            </div>
+
+
+            <div class="form-group row">
+              <div class="col-sm-2">Checkbox</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Click here to indicate that you
+                    have
+                    read and agree to the terms presented in the Terms of Service and Privacy
+                    Policy
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-block p-2 mx-auto" style="max-width: 50%">Submit</button>
+          </form>
+
+          <!-- Verified  Form End -->
 
         </div>
       </div>
     </div>
-  </nav>
-
-
-  <div class="tab-content py-5" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="nav-basic-tab">
-
-      <!--Basic Form-->
-      <article>
-        <div class="container-fluid ">
-          <div class="row justify-content-center">
-            <div class="col-9 col-lg-5 col-md-6 border signupbg pb-3">
-              <form>
-                <div class="h4 text-center pt-3"> Basic </div>
-                <div class="form-group p-1">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Email Address">
-                </div>
-                <div class="form-group p-1">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create Password">
-                </div>
-                <div class="form-group p-1">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-                </div>
-                <div class="form-group form-check mx-3 px-1">
-                  <small id="emailHelp" class="form-text text-muted">
-                    <div class="pb-1">Your email address will be kept confidential. We highly value
-                      your
-                      privacy.</div>
-                    <div class="pb-1">Please check your email inbox to confirm your email address
-                      and
-                      activate your
-                      account.</div>
-                  </small>
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check here to indicate that you
-                    have
-                    read and agree to the terms presented in the Terms of Service and Privacy
-                    Policy</label>
-                </div>
-                <button type="submit" class="btn btn-success btn-block p-2">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!--Basic Form End-->
-
-    </div>
-    <div class="tab-pane fade" id="verified" role="tabpanel" aria-labelledby="nav-verified-tab">
-
-      <!--Basic Form-->
-      <article>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-9 col-lg-5 col-md-6 border signupbg pb-3">
-              <form>
-                <div class="h4 text-center pt-3"> Verified </div>
-                <div class="form-group p-1">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Email Address">
-                  <small id="emailHelp" class="form-text text-muted mx-2">
-                    <div>Email Address Work/Profession</div>
-                  </small>
-                </div>
-                <div class="form-group p-1">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create Password">
-                </div>
-                <div class="form-group p-1">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-                </div>
-                <hr>
-                <div class="form-group p-1">
-                  <input type="username" class="form-control" id="exampleInputPassword1" placeholder="Create Username">
-                </div>
-                <div class="form-group p-1">
-                  <input type="name" class="form-control" id="exampleInputPassword1" placeholder="First Name">
-                </div>
-                <div class="form-group p-1">
-                  <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
-                </div>
-                <div class="form-group p-1">
-                  <input type="degree" class="form-control" id="exampleInputPassword1" placeholder="Medical Education">
-                  <small id="emailHelp" class="form-text text-muted mx-2">
-                    <div>e.g. Pediatrician, Audiologist, Registered Nurse, Physical Therapist</div>
-                  </small>
-                </div>
-                <div class="form-group p-1">
-                  <input type="profession" class="form-control" id="exampleInputPassword1" placeholder="Profession">
-                  <small id="emailHelp" class="form-text text-muted mx-2">
-                    <div>e.g. MD, AuD, DO, RN, DPT </div>
-                  </small>
-                </div>
-                <div class="form-group form-check mx-3 px-1">
-                  <small id="emailHelp" class="form-text text-muted">
-                    <div class="pb-1">Your email address will be kept confidential. We highly value
-                      your
-                      privacy.</div>
-                    <div class="pb-1">Please check your email inbox to confirm your email address
-                      and
-                      activate your
-                      account.</div>
-                  </small>
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Click here to indicate that you
-                    have
-                    read and agree to the terms presented in the Terms of Service and Privacy
-                    Policy</label>
-                </div>
-                <button type="submit" class="btn btn-success btn-block p-2">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!--Basic Form End-->
-
-    </div>
-  </div>
+  </article>
 
 
   <!--footer-->

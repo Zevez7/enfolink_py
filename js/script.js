@@ -83,23 +83,15 @@ $(function () {
 // }
 
 
-function toggle_id(idname) {
-  var x = document.getElementById(idname);
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
+// function toggle_id(idname) {
+//   var x = document.getElementById(idname);
+//   if (x.style.display === 'none') {
+//     x.style.display = 'block';
+//   } else {
+//     x.style.display = 'none';
+//   }
+// }
 
-function Button_inner_text(idname) {
-  x = document.getElementById(idname);
-  if (x.innerHTML === "Open Bundle Cart") {
-    x.innerHTML = "Close Bundle Cart";
-  } else {
-    x.innerHTML = "Open Bundle Cart";
-  }
-}
 
 
 
@@ -112,21 +104,15 @@ function Button_inner_text(idname) {
 //     document.getElementById("clicks").innerHTML = clicks;
 //   }
 
+// function addClick() {
+//   clicks += 1;
+//   document.getElementById("clicks").innerHTML = clicks;
+// }
 
-
-
-var clicks = 0;
-
-
-function addClick() {
-  clicks += 1;
-  document.getElementById("clicks").innerHTML = clicks;
-}
-
-function subClick() {
-  clicks -= 1;
-  document.getElementById("clicks").innerHTML = clicks;
-}
+// function subClick() {
+//   clicks -= 1;
+//   document.getElementById("clicks").innerHTML = clicks;
+// }
 /*
 
 1. Check the page's address
@@ -142,6 +128,33 @@ function subClick() {
 /// 
 //
 $(function () {
+
+
+  $("button.basicbtn, ul.basic").click( function(){
+    $("#basicform").fadeIn('slow');
+    $("#verifiedform").fadeOut('slow');
+    $("ul.list-group.basic").addClass("border-green");
+    $("ul.list-group.verified").removeClass("border-green");
+  });
+
+  $("button.verifiedbtn, ul.verified").click( function(){
+    $("#basicform").fadeOut('slow');
+    $("#verifiedform").fadeIn('slow');
+    $("ul.list-group.verified").addClass("border-green");
+    $("ul.list-group.basic").removeClass("border-green");
+  });
+
+  $(document).on('click','i.fa-times', function () {
+    $(this).parents('li')
+      .hide('slow', function () {
+        $(this).remove();
+      });
+  });
+
+var xmsls = '<li class="btn-bundle-li">' +
+'<div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>' +
+' <div class="btn-bundle-text">testing CDC Information about antibiotic</div></li>';
+
 
   x = ["howitworks", "FAQ", "signup", "features", "Signup"];
 
@@ -181,15 +194,25 @@ $(function () {
 
 
   $(".btn-bundle").click(function () {
-    $(".btn-bundle, .btn-bundle-body").toggleClass("expand-me");
+    $(".btn-bundle, .btn-bundle-body").toggleClass("expand-me expand-me-default");
   });
 
   $(".btn-bundle").click(function () {
-    $(".btn-bundle-body").toggle();
+    $(".btn-bundle-body").slideToggle("fast");
   });
 
   $(".fa-cube").click(function () {
-    $(this).toggleClass("active-teal");
+    if ($(this).hasClass("active-teal")) {
+      $(this).toggleClass("active-teal");
+      $('ul#append_to_me li:first')
+      .hide('slow', function () {
+        $(this).remove();
+      });
+    }
+    else {
+      $(this).toggleClass("active-teal");
+      $(xmsls).appendTo('#append_to_me').hide().show('slow');
+    }
   });
 
   $(".fa-thumbtack").click(function () {
@@ -213,5 +236,33 @@ $(function () {
     $('li.quickviewclick').removeClass('bg-teal');
     $(this).addClass('bg-teal');
   });
+
+
+
+
+  $('#clear_all').click(function () {
+    $('li.btn-bundle-li')
+      .hide('slow', function () {
+        $(this).remove();
+      });
+    $('.fa-cube').removeClass('active-teal');
+  
+  });
+
+  $(".list-group-item-action").focus(function(){
+    $(this).css("border", "3px solid #9ecaed");
+  });
+
+  $(".list-group-item-action").focusout(function(){
+    $(this).css("border","transparent");
+  });
+
+  $("body").on('DOMSubtreeModified', ".btn-bundle-ul", function() {
+    var clicks = $("ul.btn-bundle-ul li").size();
+    $('#clicks').html(clicks);
+});
+
+
+
 
 });

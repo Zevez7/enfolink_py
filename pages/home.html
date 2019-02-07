@@ -25,9 +25,9 @@
   <!-- header/Top Nav -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
-      <div class="cursor shover px-4" id="expandSidemenu">
+      <button type="button" class="btn cursor shover px-4 bg-transparent" id="expandSidemenu">
         <i class="fas fa-bars fa-2x text-secondary"></i>
-      </div>
+      </button>
       <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
         <img src="images\logo.png" width="200" height="auto" alt="logo">
       </a>
@@ -147,38 +147,19 @@
 
     <!-- bundle button -->
     <div class="div-button sticky-top shadow">
-      <button type="button" class="btn btn-bundle" onclick="Button_inner_text('bundle-cart2')">
+      <button type="button" class="btn btn-bundle expand-me-default">
         <div class="row nowrap inline-block justify-content-center">
           <span id="clicks">0</span> &nbsp
-          <div id="bundle-cart2"> Open Bundle Cart</div>
+          <div id="bundle-cart2"> Bundle Cart</div>
         </div>
       </button>
-      <div class="btn-bundle-body bundle-delete-none p-2">
-        <ul class="btn-bundle-ul">
-          <li class="btn-bundle-li">
-            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
-            <div class="btn-bundle-text ">CDC Information about antibiotic</div>
-          </li>
-          <li class="btn-bundle-li">
-            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
-            <div class="btn-bundle-text">CDC Information about antibiotic</div>
-          </li>
-          <li class="btn-bundle-li">
-            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
-            <div class="btn-bundle-text">CDC Information about antibiotic</div>
-          </li>
-          <li class="btn-bundle-li">
-            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
-            <div class="btn-bundle-text">CDC Information about antibiotic</div>
-          </li>
-          <li class="btn-bundle-li">
-            <div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>
-            <div class="btn-bundle-text">CDC Information about antibiotic</div>
-          </li>
+      <div class="btn-bundle-body bundle-delete-none p-2 expand-me-default">
+        <ul class="btn-bundle-ul" id="append_to_me">
+
         </ul>
         <div class="p-2 d-flex justify-content-around">
           <button type="button" class="btn btn-success">Create</button>
-          <button type="button" class="btn btn-secondary">Clear All</button>
+          <button type="button" class="btn btn-secondary" id="clear_all">Clear All</button>
         </div>
 
       </div>

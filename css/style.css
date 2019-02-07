@@ -138,6 +138,11 @@ a.thumb-title:active {
     width: 250px !important;
 }
 
+
+.expand-me-default {
+    width: 200px !important;
+}
+
 .btn-bundle-body {
     background-color: white;
     color: #6c757d;
@@ -171,7 +176,7 @@ li.btn-bundle-li {
 
 /* My Collection */
 
-li.collection {
+.collection {
     list-style-type: none;
     border: 1px solid gainsboro !important;
     padding: 6px 9px;
@@ -258,11 +263,19 @@ div.mycol-chevron {
 }
 
 .border-active {
-    border-left: 5px solid #17baa3 !important
+    border-left: 5px solid #17baa3 !important;
 }
 
 .border-L-3 {
-    border-left: 5px solid transparent !important
+    border-left: 5px solid transparent !important;
+}
+
+.border-green {
+    border-top: 0;
+    border-right: 3px solid #28a745 !important;
+    border-bottom: 3px solid #28a745 !important;
+    border-left: 3px  solid #28a745 !important;
+
 }
 
 div.hoverborder:hover {
@@ -307,6 +320,9 @@ td {
     background-color: gainsboro !important;
 }
 
+.quickviewclick {
+    cursor: pointer;
+}
 /* a.side-nav-link:link {
     color: black
 }
@@ -357,6 +373,9 @@ a:active {
     font-size: 65px
 }
 
+input[type=checkbox] {
+    transform: scale(1.5);
+  }
 /* Dat's Content End */
 
 /* Variables */
