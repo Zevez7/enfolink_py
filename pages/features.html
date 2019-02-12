@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <base href="C:\Users\datgu\Desktop\javascript\Enfolink_py\" />
+  <base href="http://localhost\Enfolink_py\" />
   <!--Must place in front-->
   <meta charset="utf-8">
   <!-- <meta http-equiv="refresh" content="5"> -->
@@ -75,7 +75,8 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Remember Me</label>
             </div>
-            <a class="btn btn-success btn-block p-2" href="pages\home.html">Login</a>            <div>
+            <a class="btn btn-success btn-block p-2" href="pages\home.html">Login</a>
+            <div>
               <div class="text-center p-2"><a class="text-muted">Forgot Password</a></div>
             </div>
           </form>
@@ -111,13 +112,15 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-sm-12">
-          <table class="table-sm mx-auto bg-light">
-            <tbody>
+          <table class="table table-sm mx-auto bg-light">
+            <thead class="thead-light">
               <tr>
-                <th>Time Saved</th>
-                <th>Average</th>
-                <th>Estimate</th>
+                <th scope="col">Time Saved</th>
+                <th scope="col">Average</th>
+                <th scope="col">Estimate</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td scope="row">Patients that would benefit from Enfolink daily </td>
                 <td>18</td>

@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="http://localhost\Enfolink_py\" />
+  <!--Must place in front-->
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js\lib\jquery-ui-1.12.1\jquery-ui.css">
+  <script src="js\lib\jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+  <script src="js\lib\jquery-ui-1.12.1\jquery-ui.js"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <title>Enfolink</title>
+</head>
+
+<body>
+  <!-- header/Top Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
+      <button type="button" class="btn cursor shover px-4 bg-transparent" id="expandSidemenu">
+        <i class="fas fa-bars fa-2x text-secondary"></i>
+      </button>
+      <a class="navbar-brand mx-5" href="pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
+        <img src="images\logo.png" width="200" height="auto" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline mx-auto my-2 my-lg-0">
+          <input class="form-control mr-sm-2" style="min-width: 400px" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav p-1 shover">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              DAT
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="index.html" class="dropdown-item">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End header/Top Nav -->
+
+  <!-- body-wrapper -->
+  <div class="body-wrapper-100px">
+
+    <!-- Side NAV -->
+    <div class="float-left sticky-top NavExpand sidebar22">
+
+      <ul class="list-group list-group-flush">
+        <a href="pages\home.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 home">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Home
+            </div>
+          </li>
+        </a>
+        <a href="pages\mycollection.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mycollection">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-folder"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Collection
+            </div>
+          </li>
+        </a>
+        <a href="pages\myucodes.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myucodes">
+              <div class="text-center h4 mb-0" style="width: 35px">
+                  <i class="fas fa-code"></i>
+              </div>
+              <div class="NavExpandtext align-self-center mx-1">
+                  My UCodes
+              </div>
+          </li>
+      </a>
+        <a href="pages\mymedia.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mymedia">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Media
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myprofile">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Profile
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myaccount">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Account
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 aboutus">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-info"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              About Us
+            </div>
+          </li>
+        </a>
+        <a href="" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 learn">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Learn
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <!-- Side NAV End-->
+
+    <!-- bundle button -->
+    <div class="div-button sticky-top shadow">
+      <button type="button" class="btn btn-bundle expand-me-default">
+        <div class="row nowrap inline-block justify-content-center">
+          <span id="clicks">0</span> &nbsp
+          <div id="bundle-cart2"> Bundle Cart</div>
+        </div>
+      </button>
+      <div class="btn-bundle-body bundle-delete-none p-2 expand-me-default">
+        <ul class="btn-bundle-ul" id="append_to_me">
+
+        </ul>
+        <div class="p-2 d-flex justify-content-around">
+          <button type="button" class="btn btn-success">Create</button>
+          <button type="button" class="btn btn-secondary" id="clear_all">Clear All</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- bundle button end -->
+
+    <!-- Page Title -->
+    <article class="p-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h3 m-4 font-weight-bold border-bottom text-secondary"> My UCodes </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Page Title End -->
+
+    <article>
+      <div class="container text-secondary">
+        <div class="row align-content-center">
+
+          <div class="col-12 col-lg-7 col-md-12 col-sm-12">
+            <form class="form-inline mx-auto my-2">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-success my-2" type="submit">Search</button>
+            </form>
+
+            <table class="table bg-white table-hover table-sm myucodestable shadow">
+              <caption>MyUCodes List</caption>
+              <thead class="shadow">
+                <tr>
+                    <th scope="col">Ucode</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Last Accessed</th>
+                    <th scope="col">Views</th>
+                    <th scope="col">Bundle</th>
+                    <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"> <a href="#">Z5E3Y-M5BJT</a></th>
+                  <td>05/10/2017</td>
+                  <td>05/10/2017</td>
+                  <td>20</td>
+                  <td><i class="fas fa-cube teal-hover"></i></td>
+                  <td><i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Save</a>
+                      <a class="dropdown-item" href="#">Email To</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Z5E3Y-M5BJT</th>
+                  <td>05/10/2017</td>
+                  <td>05/10/2017</td>
+                  <td>20</td>
+                  <td><i class="fas fa-cube teal-hover"></i></td>
+                  <td><i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Save</a>
+                      <a class="dropdown-item" href="#">Email To</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Z5E3Y-M5BJT</th>
+                  <td>05/10/2017</td>
+                  <td>05/10/2017</td>
+                  <td>20</td>
+                  <td><i class="fas fa-cube teal-hover"></i></td>
+                  <td><i class="fas fa-ellipsis-v cursor pl-2" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Save</a>
+                      <a class="dropdown-item" href="#">Email To</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+
+          <div class="col-12 col-lg-5 col-md-8 col-sm-12">
+            <div>
+              <button type="button" class="btn collection shover shadow">Print PDF</button>
+              <button type="button" class="btn collection shover shadow">Download PDF</button>
+              <button type="button" class="btn collection shover shadow">Copy UCode</button>
+            </div>
+
+            <div class="bg-white p-2 mt-3 border shadow position-relative">
+              Z5E3Y-M5BJT
+            </div>
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:20%">
+                <img src="images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-center" style="width:65%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+              </div>
+              <div class="float-right h5" style="width:15%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:20%">
+                <img src="images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-center" style="width:65%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+              </div>
+              <div class="float-right h5" style="width:15%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:20%">
+                <img src="images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-center" style="width:65%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+              </div>
+              <div class="float-right h5" style="width:15%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:20%">
+                <img src="images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-center" style="width:65%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+              </div>
+              <div class="float-right h5" style="width:15%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </article>
+
+
+
+
+  </div>
+  <!-- end body-wrapper -->
+
+
+</body>
+
+</html>
