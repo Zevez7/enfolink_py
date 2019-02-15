@@ -26,7 +26,7 @@ $(function () {
     ' <div class="btn-bundle-text">testing CDC Information about antibiotic</div></li>';
 
 
-  x = ["howitworks", "FAQ", "signup", "features", "Signup"];
+  x = ["howitworks", "FAQ", "signup", "features", "Signup",];
 
   $.each(x, function (_index, value) {
     if (window.location.href.indexOf(value) > -1) {
@@ -34,7 +34,7 @@ $(function () {
     }
   });
 
-  x = ["home", "mycollection", "myucodes", "mymedia", "myprofile", "myaccount", "aboutus", "learn"];
+  x = ["home", "mycollection", "myucodes", "mymedia", "myprofile", "aboutus", "learn", "account"];
 
   $.each(x, function (_index, value) {
     if (window.location.href.indexOf(value) > -1) {
@@ -133,12 +133,13 @@ $(function () {
     $('#clicks').html(clicks);
   });
 
-  // var hrefbaseLocal = '<base href="C:/wamp64/www/Enfolink_py/" />';
+  $('.accountedit').click(function () {
+    $('form :input').attr('readonly', false);
+  });
 
-  // var hrefbaseServer = '<base href="http://localhost/Enfolink_py/" />';
-  // var links = "<a>add</a>";
-  // $('head').prepend(hrefbaseServer);
-
+  $('.accountsave').click(function () {
+    $('form.settings :input').attr('readonly', true);
+  });
 
 
 });
