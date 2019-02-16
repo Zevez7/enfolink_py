@@ -1,30 +1,16 @@
 
 $(function () {
-  $(document).on('click', 'i.fa-times', function () {
-    $(this).parents('li')
-      .hide('slow', function () {
-        $(this).remove();
-      });
+
+
+  //Multiple
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 
-  $("button.basicbtn, ul.basic").click(function () {
-    $("#basicform").fadeIn('slow');
-    $("#verifiedform").fadeOut('slow');
-    $("ul.list-group.basic").addClass("border-green");
-    $("ul.list-group.verified").removeClass("border-green");
-  });
-
-  $("button.verifiedbtn, ul.verified").click(function () {
-    $("#basicform").fadeOut('slow');
-    $("#verifiedform").fadeIn('slow');
-    $("ul.list-group.verified").addClass("border-green");
-    $("ul.list-group.basic").removeClass("border-green");
-  });
-
-  var xmsls = '<li class="btn-bundle-li">' +
-    '<div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>' +
-    ' <div class="btn-bundle-text">testing CDC Information about antibiotic</div></li>';
-
+  $('.tooltipvideo').tooltip({ title: "Video", placement: "bottom" });
+  $('.tooltipcollection').tooltip({ title: "Saved", placement: "bottom" });
+  $('.tooltipinfo').tooltip({ title: "Info", placement: "bottom" });
+  $('.tooltipbundle').tooltip({ title: "Bundle", placement: "bottom" });
 
   x = ["howitworks", "FAQ", "signup", "features", "Signup",];
 
@@ -43,27 +29,20 @@ $(function () {
     }
   });
 
-  $(".mycol-chevron-quick-view").click(function () {
-    $("#quickview").toggle(100);
-  });
-
-  $(".mycol-chevron-pin-board ").click(function () {
-    $("#pinboard").toggle(100);
-  });
-
+  //Sidemenu
   $("#expandSidemenu").click(function () {
     $(".NavExpandtext").toggle(100);
   });
 
-  $(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+  $(".list-group-item-action").focus(function () {
+    $(this).css("border", "3px solid #9ecaed");
   });
 
-  $('.tooltipvideo').tooltip({ title: "Video", placement: "bottom" });
-  $('.tooltipcollection').tooltip({ title: "Saved", placement: "bottom" });
-  $('.tooltipinfo').tooltip({ title: "Info", placement: "bottom" });
-  $('.tooltipbundle').tooltip({ title: "Bundle", placement: "bottom" });
+  $(".list-group-item-action").focusout(function () {
+    $(this).css("border", "transparent");
+  });
 
+  //Bundlebox
   $(".btn-bundle").click(function () {
     $(".btn-bundle, .btn-bundle-body").toggleClass("expand-me expand-me-default");
   });
@@ -71,6 +50,22 @@ $(function () {
   $(".btn-bundle").click(function () {
     $(".btn-bundle-body").slideToggle("fast");
   });
+
+  $(document).on('click', 'i.fa-times', function () {
+    $(this).parents('li')
+      .hide('slow', function () {
+        $(this).remove();
+      });
+  });
+
+  $("body").on('DOMSubtreeModified', ".btn-bundle-ul", function () {
+    var clicks = $("ul.btn-bundle-ul li").length;
+    $('#clicks').html(clicks);
+  });
+
+  var xmsls = '<li class="btn-bundle-li">' +
+    '<div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>' +
+    ' <div class="btn-bundle-text">testing CDC Information about antibiotic</div></li>';
 
   $(".fa-cube").click(function () {
     if ($(this).hasClass("active-teal")) {
@@ -85,6 +80,56 @@ $(function () {
       $(xmsls).appendTo('#append_to_me').hide().show('slow');
     }
   });
+  $('#clear_all').click(function () {
+    $('li.btn-bundle-li')
+      .hide('slow', function () {
+        $(this).remove();
+      });
+    $('.fa-cube').removeClass('active-teal');
+  });
+
+  //account
+  $('.accountedit').click(function () {
+    $('form :input').attr('readonly', false);
+  });
+
+  $('.accountsave').click(function () {
+    $('form.settings :input').attr('readonly', true);
+  });
+
+  //mycollection
+  $('button.bundlecheckbox').click(function () {
+    num = $('.fa-check-square').length;
+    while (num > 0) {
+      $(xmsls).appendTo('#append_to_me').hide().show('slow');
+      num -= 1;
+    }
+
+  });
+
+  $('.selectall').click(function () {
+    $(this).parent().siblings('.mycol-body').
+      addClass("checkbox-bg-teal");
+    $(this).parent().siblings('.mycol-body').children('i.checkbox').
+      addClass("fa-check-square").
+      removeClass('fa-square');
+  });
+
+  $('.selectnone').click(function () {
+    $(this).parent().siblings('.mycol-body').
+      removeClass("checkbox-bg-teal");
+    $(this).parent().siblings('.mycol-body').children('i.checkbox').
+      removeClass("fa-check-square").
+      addClass('fa-square');
+  });
+
+  $(".mycol-chevron-quick-view").click(function () {
+    $("#quickview").toggle(100);
+  });
+
+  $(".mycol-chevron-pin-board ").click(function () {
+    $("#pinboard").toggle(100);
+  });
 
   $(".fa-thumbtack").click(function () {
     $(this).toggleClass("active-teal");
@@ -92,6 +137,7 @@ $(function () {
 
   $(".checkbox").click(function () {
     $(this).toggleClass("fa-check-square fa-square");
+    $(this).parent().toggleClass("checkbox-bg-teal");
   });
 
   $(".mycol-chevron-pin-board").click(function () {
@@ -102,44 +148,53 @@ $(function () {
     $(".mychevroncollapse-quick-view").toggleClass("fa-chevron-circle-down fa-chevron-circle-right");
   });
 
-
   $('li.quickviewclick').click(function () {
     $('li.quickviewclick').removeClass('bg-teal');
     $(this).addClass('bg-teal');
   });
 
 
+  //FAQ
 
+  //mymedia
 
-  $('#clear_all').click(function () {
-    $('li.btn-bundle-li')
-      .hide('slow', function () {
-        $(this).remove();
-      });
-    $('.fa-cube').removeClass('active-teal');
-
+  //signup
+  $("button.basicbtn, ul.basic").click(function () {
+    $("#basicform").fadeIn('slow');
+    $("#verifiedform").fadeOut('slow');
+    $("ul.list-group.basic").addClass("border-green");
+    $("ul.list-group.verified").removeClass("border-green");
   });
 
-  $(".list-group-item-action").focus(function () {
-    $(this).css("border", "3px solid #9ecaed");
+  $("button.verifiedbtn, ul.verified").click(function () {
+    $("#basicform").fadeOut('slow');
+    $("#verifiedform").fadeIn('slow');
+    $("ul.list-group.verified").addClass("border-green");
+    $("ul.list-group.basic").removeClass("border-green");
   });
 
-  $(".list-group-item-action").focusout(function () {
-    $(this).css("border", "transparent");
-  });
 
-  $("body").on('DOMSubtreeModified', ".btn-bundle-ul", function () {
-    var clicks = $("ul.btn-bundle-ul li").length;
-    $('#clicks').html(clicks);
-  });
+  //features
 
-  $('.accountedit').click(function () {
-    $('form :input').attr('readonly', false);
-  });
+  //home
 
-  $('.accountsave').click(function () {
-    $('form.settings :input').attr('readonly', true);
-  });
+  //howitworks
+
+  //index 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
