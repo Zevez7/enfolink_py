@@ -4,382 +4,407 @@
 /* Dat's Content Start  */
 
 
-/* multipage */ 
+/* multipage */
 
 body {
-    background-color: #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+   font-family: 'Roboto',
+   sans-serif;
+   color: var(--color-text);
+   font-weight: 200;
 }
 
 .bg-teal {
-    background: #8ee9dd
+  background: #8ee9dd
 }
 
 .checkbox-bg-teal {
-    background: #8ee9dd
+  background: #8ee9dd
 }
 
 .body-wrapper-100px {
-    padding-top: 70px;
-    padding-left: 60px;
+  padding-top: 70px;
+  padding-left: 60px;
 }
 
 .list-group-item-action {
-    color: #6c757d
+  color: #6c757d
 }
 
 .sidebar22 {
-    height: 100%;
-    width: auto;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #f8f9fa;
-    overflow-x: hidden;
-    padding-top: 50px;
-    margin-top: 15px
+  height: 100%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  padding-top: 50px;
+  margin-top: 15px
+}
+
+.teal-hover:hover {
+  color: #17baa3;
+  cursor: pointer
+}
+
+.NavExpandtext {
+  display: none;
+}
+
+.active-teal {
+  color: #17baa3;
+  cursor: pointer
+}
+
+.border-active {
+  border-left: 5px solid #17baa3 !important;
+}
+
+.border-L-3 {
+  border-left: 5px solid transparent !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.whitesmoke {
+  background-color: #F5F5F5
+}
+
+.bg-lightgray {
+  background-color: #f5f5f5 !important;
+}
+
+
+.shadow {
+  box-shadow: 0px 3px 5px gainsboro !important;
+}
+
+.shover:hover {
+  background-color: gainsboro !important;
+}
+
+.logo {
+  height: auto;
+  width: 50px;
+  min-width: 200px;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
 }
 
 /* Thumbnail */
 
 .h7 {
-    font-size: 0.9em
+  font-size: 0.9em
 }
 
 .thumb-title {
-    height: 3em;
-    line-height: 1.4em;
-    overflow: hidden;
-    padding: 0;
-    font-size: 1rem
+  height: 3em;
+  line-height: 1.4em;
+  overflow: hidden;
+  padding: 0;
+  font-size: 1rem
 }
 
 a.thumb-title:link {
-    color: #6c757d
+  color: #6c757d
 }
 
 a.thumb-title:visited {
-    color: #6c757d
+  color: #6c757d
 }
 
 a.thumb-title:hover {
-    color: #17baa3
+  color: #17baa3
 }
 
 a.thumb-title:active {
-    color: #6c757d
+  color: #6c757d
 }
 
 .thumb-user {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-size: 1.1rem
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 1.1rem
 }
 
 .thumb-stat {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-size: 1.2rem
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 1.2rem
 }
 
 .thumb-ul {
-    display: flex;
-    align-items: stretch;
-    /* Default */
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: stretch;
+  /* Default */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .thumb-li {
-    display: block;
-    flex: 0 1 auto;
-    /* Default */
-    list-style-type: none;
+  display: block;
+  flex: 0 1 auto;
+  /* Default */
+  list-style-type: none;
 }
 
 /* Tooltip */
 
 .tooltip>.tooltip-inner {
-    background-color: white;
-    color: black;
-    border: 0;
-    padding: 4px !important;
-    font-size: 15px;
-    display: block;
-    box-shadow: 0px 3px 5px gray;
-    z-index: 4;
+  background-color: white;
+  color: black;
+  border: 0;
+  padding: 4px !important;
+  font-size: 15px;
+  display: block;
+  box-shadow: 0px 3px 5px gray;
+  z-index: 4;
 }
 
 .tooltip.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Bundle Button */
 
 .div-button {
-    float: right;
-    z-index: 2;
-    position: fixed;
-    top: 90px;
-    right: 10px;
-    height: auto;
+  float: right;
+  z-index: 2;
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  height: auto;
 }
 
 .btn-bundle {
-    background: #17baa3;
-    color: white;
-    cursor: pointer;
-    width: 200px;
+  background: #17baa3;
+  color: white;
+  cursor: pointer;
+  width: 200px;
 }
 
 .btn-bundle.btn:hover {
-    color: white !important;
+  color: white !important;
 }
 
 .table {
-    color: #6c757d;
+  color: #6c757d;
 }
+
 .expand-me {
-    width: 250px !important;
+  width: 250px !important;
 }
 
 
 .expand-me-default {
-    width: 200px !important;
+  width: 200px !important;
 }
 
 .btn-bundle-body {
-    background-color: white;
-    color: #6c757d;
-    width: 250px;
-    display: none;
+  background-color: white;
+  color: #6c757d;
+  width: 250px;
+  display: none;
 }
 
 ul.btn-bundle-ul {
-    display: block;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 li.btn-bundle-li {
-    flex: 0 1 auto;
-    list-style-type: none;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 2px;
-    padding: 1px;
+  flex: 0 1 auto;
+  list-style-type: none;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2px;
+  padding: 1px;
 }
 
 .btn-bundle-text {
-    white-space: nowrap;
-    display: inline-block;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .bundle-delete-block {
-    display: block;
+  display: block;
 }
 
 /* My Collection */
 
 .collection {
-    list-style-type: none;
-    border: 1px solid gainsboro !important;
-    padding: 6px 9px;
-    margin: 4px 7px;
-    background-color: white;
-    color: #6c757d;
+  list-style-type: none;
+  border: 1px solid gainsboro !important;
+  padding: 6px 9px;
+  margin: 4px 7px;
+  background-color: white;
+  color: #6c757d;
 }
 
 ul.navmycol {
-    list-style-type: none;
-    background: white;
-    border: 1px solid gainsboro !important;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  background: white;
+  border: 1px solid gainsboro !important;
+  margin: 0;
+  padding: 0;
 }
 
 li.navmycol-list {
-    padding: 0.4em;
+  padding: 0.4em;
 }
 
 li.navmycol-list2 {
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
 }
 
 div.navmycol-pin {
-    position: absolute;
-    right: 1.8em;
+  position: absolute;
+  right: 1.8em;
 }
 
 div.mycol-chevron {
-    font-size: 1.2em
+  font-size: 1.2em
 }
 
 .mycol-title-bar {
-    height: 3em;
-    line-height: 1.2em;
-    overflow: hidden;
-    background-color: white;
-    padding: 0.2em;
-    box-shadow: 0px 3px 5px gainsboro;
-    margin-bottom: 5px;
+  height: 3em;
+  line-height: 1.2em;
+  overflow: hidden;
+  background-color: white;
+  padding: 0.2em;
+  box-shadow: 0px 3px 5px gainsboro;
+  margin-bottom: 5px;
 }
 
 .mycol-title-text {
-    float: left;
-    padding: 0.4em;
-    width: 85%;
+  float: left;
+  padding: 0.4em;
+  width: 85%;
 }
 
 .mycol-icons {
-    position: absolute;
-    right: 20px;
-    padding: 0.4em;
-    font-size: 1.2em
+  position: absolute;
+  right: 20px;
+  padding: 0.4em;
+  font-size: 1.2em
 }
 
 .mycol-body {
-    padding: 0.6em;
-    font-size: 1em;
-}
-
-.teal-hover:hover {
-    color: #17baa3;
-    cursor: pointer
-}
-
-table.myucodetable td,
-tr {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.NavExpandtext {
-    display: none;
-}
-
-.active-teal {
-    color: #17baa3;
-    cursor: pointer
-}
-
-.anchor {
-    display: block;
-    position: relative;
-    top: -68px;
-    visibility: hidden;
-}
-
-.border-active {
-    border-left: 5px solid #17baa3 !important;
-}
-
-.border-L-3 {
-    border-left: 5px solid transparent !important;
-}
-
-.border-green {
-    border-top: 0;
-    border-right: 3px solid #28a745 !important;
-    border-bottom: 3px solid #28a745 !important;
-    border-left: 3px solid #28a745 !important;
-
-}
-
-div.hoverborder:hover {
-    border: 3px solid #28a745;
-}
-
-.signupbg {
-    background: #ececec
-}
-
-.cursor {
-    cursor: pointer;
-}
-
-.pa-40 {
-    padding-top: 50px;
-}
-
-.whitesmoke {
-    background-color: #F5F5F5
-}
-
-.bg-lightgray {
-    background-color: #f5f5f5 !important;
-}
-
-
-.shadow {
-    box-shadow: 0px 3px 5px gainsboro !important;
-}
-
-.shover:hover {
-    background-color: gainsboro !important;
+  padding: 0.6em;
+  font-size: 1em;
 }
 
 .quickviewclick {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+/* myucode */
+table.myucodetable td,
+tr {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* FAQ */
+.anchor {
+  display: block;
+  position: relative;
+  top: -68px;
+  visibility: hidden;
+}
+
+.pa-40 {
+  padding-top: 50px;
+}
+/* Signup */
+.border-green {
+  border-top: 0;
+  border-right: 3px solid #28a745 !important;
+  border-bottom: 3px solid #28a745 !important;
+  border-left: 3px solid #28a745 !important;
+
+}
+
+.signupbg {
+  background: #ececec
+}
+
+/* mymedia */
+
+.title_column {
+  min-width: 300px;
 }
 
 .mymedia_list {
-    overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 .mymedia_list td:nth-child(2) {
-    min-width: 400px;
-    text-align: left
-}
-
-
-.logo {
-    height: auto;
-    width: 50px;
-    min-width: 200px;
-}
-
-.nav-link {
-    white-space: nowrap;
+  min-width: 400px;
+  text-align: left
 }
 
 .fs-65 {
-    font-size: 65px
+  font-size: 65px
 }
 
-input[type=checkbox] {
-    transform: scale(1.5);
+
+/* my profile */
+
+.placeholder {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px 50px 50px 50px;
+  background: #f0ed36
 }
 
+.ulmyprofile {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.noflexwrap{
+  flex-wrap: nowrap 
+}
+
+#myTabContent {
+  margin-block-start: 1em;
+}
 /* Dat's Content End */
 
 /* Variables */
 
 :root {
-   
-    /* Override Variables */
-    --gray: #7d7d7d;
-    --gray-dark: #404040;
-    --font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --font-family-serif: 'Merriweather', 'Times New Roman', serif;
-    /* Page Variables */
-    --font-weight-light: 200 !important;
-    --color-medium: #ddd;
-    --color-reverse: var(--gray-dark);
-    --color-text: var(--gray-dark);
-    --color-text-reverse: var(--light);
-    --font-family-title: var(--font-family-sans-serif);
-    --font-family-text: var(--font-family-serif);
+
+  /* Override Variables */
+  --gray: #7d7d7d;
+  --gray-dark: #404040;
+  --font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-serif: 'Merriweather', 'Times New Roman', serif;
+  /* Page Variables */
+  --font-weight-light: 200 !important;
+  --color-medium: #ddd;
+  --color-reverse: var(--gray-dark);
+  --color-text: var(--gray-dark);
+  --color-text-reverse: var(--light);
+  --font-family-title: var(--font-family-sans-serif);
+  --font-family-text: var(--font-family-serif);
 }
 
-body {
-    /* font-family: var(--font-family-text); */
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-text);
-    font-weight: 200;
-}
