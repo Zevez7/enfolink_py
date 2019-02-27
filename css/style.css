@@ -3,24 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 /* Dat's Content Start  */
 
-/* @media screen and (max-width: 768px) {
-body.landing {
-    padding-top:200px;
-  }
-} */
+
+/* multipage */ 
 
 body {
     background-color: #f5f5f5 !important;
 }
 
-.bg-teal{
+.bg-teal {
     background: #8ee9dd
 }
 
-.checkbox-bg-teal{
+.checkbox-bg-teal {
     background: #8ee9dd
 }
-
 
 .body-wrapper-100px {
     padding-top: 70px;
@@ -138,7 +134,13 @@ a.thumb-title:active {
     width: 200px;
 }
 
+.btn-bundle.btn:hover {
+    color: white !important;
+}
 
+.table {
+    color: #6c757d;
+}
 .expand-me {
     width: 250px !important;
 }
@@ -205,10 +207,8 @@ li.navmycol-list {
 li.navmycol-list2 {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    padding-left:0.4em;
-    padding-right:0.4em;
-
-
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 div.navmycol-pin {
@@ -252,10 +252,13 @@ div.mycol-chevron {
     color: #17baa3;
     cursor: pointer
 }
-table.myucodetable td , tr {
+
+table.myucodetable td,
+tr {
     text-align: center;
     vertical-align: middle;
 }
+
 .NavExpandtext {
     display: none;
 }
@@ -284,7 +287,7 @@ table.myucodetable td , tr {
     border-top: 0;
     border-right: 3px solid #28a745 !important;
     border-bottom: 3px solid #28a745 !important;
-    border-left: 3px  solid #28a745 !important;
+    border-left: 3px solid #28a745 !important;
 
 }
 
@@ -314,7 +317,7 @@ div.hoverborder:hover {
 
 
 .shadow {
-    box-shadow: 0px 3px 5px gainsboro;
+    box-shadow: 0px 3px 5px gainsboro !important;
 }
 
 .shover:hover {
@@ -325,55 +328,15 @@ div.hoverborder:hover {
     cursor: pointer;
 }
 
-.mymedia_list{
+.mymedia_list {
     overflow-x: scroll;
 }
 
-.mymedia_list td:nth-child(2) { 
+.mymedia_list td:nth-child(2) {
     min-width: 400px;
     text-align: left
 }
 
-/* .title_row {
-    height: 3em;
-    line-height: 1.4em;
-    overflow: hidden;
-} */
-/* a.side-nav-link:link {
-    color: black
-}
-
-a.side-nav-link:visited {
-    color: black
-}
-
-a.side-nav-link:hover {
-    color: black
-}
-
-a.side-nav-link:active {
-    color: black
-} */
-
-/* unvisited link
-a:link {
-  color: red;
-}
-
-/* visited link
-a:visited {
-  color: green;
-} */
-
-/* mouse over link
-a:hover {
-  color: hotpink;
-} */
-
-/* selected link
-a:active {
-  color: blue;
-} */
 
 .logo {
     height: auto;
@@ -391,44 +354,14 @@ a:active {
 
 input[type=checkbox] {
     transform: scale(1.5);
-  }
+}
+
 /* Dat's Content End */
 
 /* Variables */
 
 :root {
-    /*
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-
-  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-  */
+   
     /* Override Variables */
     --gray: #7d7d7d;
     --gray-dark: #404040;
