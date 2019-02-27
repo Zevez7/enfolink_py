@@ -1,3 +1,11 @@
-guide.txt
 .htaccess
-.vscode/
+*.vscode
+.DS_Store
+node_modules/
+bower_components
+.tmp
+.sass-cache
+*.txt
+images/
+*.json
+gruntfile.js
