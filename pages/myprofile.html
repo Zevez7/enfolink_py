@@ -166,69 +166,181 @@
     </article>
     <!-- Page Title End -->
 
+
+
     <div class="container image-holder">
-      <div class="row justify-content-start m-2 ">
-        <div class="col-12 d-flex flex-row border">
 
-          <div class="placeholder">
+      <div class="row justify-content-start m-2 clearfix">
+
+        <div class="col-lg-3 col-md-4 col-sm-5 col-12 d-flex flex-row">
+          <div class="placeholder mx-auto">
+            Hello
           </div>
+        </div> <!-- col -->
 
-          <div class="d-flex align-items-end">
+        <div class="col-lg-9 col-md-8 col-sm-5 col-12 d-flex align-items-end">
+          <ul class="border-0 ulmyprofile p-3">
+            <li class="limyprofile h3">Dat Nguyen</li>
+            <li class="limyprofile h4">Dat7MD</li>
+            <li class="limyprofile h5">dat7md@gmail.com</li>
+          </ul>
+        </div> <!-- col -->
 
-            <ul class="border-0 ulmyprofile p-3">
-              <li class="limyprofile h3">Dat Nguyen</li>
-              <li class="limyprofile h4">Dat7MD</li>
-              <li class="limyprofile h5">dat7md@gmail.com</li>
-            </ul>
-          </div>
-        </div>
+      </div> <!-- row -->
 
-        <div class="row justify-content-start mt-5">
-          <div class="col-10 pl-0 ">
-            <ul class="nav nav-tabs noflexwrap" id="myTab" role="tablist">
+      <div class="row justify-content-center mt-5 myprofile-tab-nav clearfix">
 
-              <li class="nav-item">
-                <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
-                  aria-selected="true">All</a>
-              </li>
+        <div class="col-lg-12 col-md-12 col-sm-12 pl-0 ">
+          <ul class="nav nav-tabs flexwrap" id="myTab" role="tablist">
+            <li class="nav-item btn ">
+              <a class="nav-link collection shover shadow px-4 mx- active" id="all-tab" data-toggle="tab" href="#all"
+                role="tab" aria-controls="all" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item btn ">
+              <a class="nav-link collection shover shadow px-4 mx-" id="online-tab" data-toggle="tab" href="#online"
+                role="tab" aria-controls="online" aria-selected="false">Online</a>
+            </li>
+            <li class="nav-item btn ">
+              <a class="nav-link collection shover shadow px-4 mx-" id="my_media-tab" data-toggle="tab" href="#my_media"
+                role="tab" aria-controls="my_media" aria-selected="false">My Media</a>
+            </li>
+            <li class="nav-item btn ">
+              <a class="nav-link collection shover shadow px-4 mx-" id="subscriber-tab" data-toggle="tab" href="#subscriber"
+                role="tab" aria-controls="Subscriber" aria-selected="false">Subscriber</a>
+            </li>
+            <li class="nav-item btn ">
+              <a class="nav-link collection shover shadow px-4 mx-" id="follow-tab" data-toggle="tab" href="#follows"
+                role="tab" aria-controls="Subscriber" aria-selected="false">Follows</a>
+            </li>
+          </ul> <!-- ul -->
+        </div> <!-- col -->
+      </div> <!-- tab-nav row -->
 
-              <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                  aria-selected="false">Online</a>
-              </li>
+      <div class="row align-content-center myprofile_row clearfix">
 
-              <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                  aria-selected="false">Uploaded</a>
-              </li>
-            </ul>
-            <div class="row align-content-center">
+        <div class="tab-content" id="myTabContent">
 
-              <div class="tab-content" id="myTabContent">
-                <div class="w-100 tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                  all
-                </div>
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
 
-                <div class="w-100 tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  profile
-                </div>
-
-                <div class="w-100 tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                  uploaded
-                </div>
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
               </div>
+              <div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+                <h6>Online</h6>
 
-
-
+              </div>
+              <div class="h5" style="width:5%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
             </div>
 
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+                <h6>my_media</h6>
+
+              </div>
+              <div class="h5" style="width:5%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+          </div> <!-- all-tab -->
+
+          <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+                <h6>Online</h6>
+
+              </div>
+              <div class="h5" style="width:5%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+          </div> <!-- online-tab -->
+
+          <div class="tab-pane fade" id="my_media" role="tabpanel" aria-labelledby="my_media-tab">
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>Healthy Weight Losss Healthy Weight Losss Healthy Weight </h6>
+                <h6>My Media</h6>
+
+              </div>
+              <div class="h5" style="width:5%">
+                <i class="fas fa-info-circle tooltipinfo"></i>
+                <i class="fas fa-cube teal-hover"></i>
+              </div>
+            </div>
+
+          </div> <!-- my_media-tab -->
+
+          <div class="tab-pane fade" id="subscriber" role="tabpanel" aria-labelledby="Subscriber-tab">
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+<div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>John Smith </h6>
+                <h6>DO </h6>
+              </div>
+              <div class="d-flex align-items-center" style="width:auto">
+                <h3><i class="fa fa-check-circle teal-hover" aria-hidden="true"></i></h3>
+              </div>
+            </div>
+
+          </div> <!-- subscriber-tab -->
+
+          <div class="tab-pane fade" id="follows" role="tabpanel" aria-labelledby="my_media-tab">
+
+            <div class="p-2 d-flex bg-white border align-items-center justify-content-between">
+              <div class="" style="width:15%">
+                <img src="../images\website_thumbnail.png" alt="thumbnail" class="img-thumbnail">
+              </div>
+              <div class="p-1 thumb-title text-left" style="width:75%">
+                <h6>Jane Doe </h6>
+                <h6>PA</h6>
+              </div>
+
+              <div class="d-flex align-items-center" style="width:auto">
+                <h3><i class="fa fa-check-circle active-teal" aria-hidden="true"></i></h3>
+              </div>
+
+            </div>
           </div>
-        </div>
+
+        </div> <!-- follows-tab -->
+
+      </div> <!-- tabcontent -->
 
 
 
-      </div>
-      <!-- end body-wrapper -->
+    </div>
+
+  </div>
+
+
+
+  </div>
+  <!-- end body-wrapper -->
 
 
 </body>

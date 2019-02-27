@@ -8,10 +8,10 @@
 
 body {
   background-color: #f5f5f5 !important;
-   font-family: 'Roboto',
-   sans-serif;
-   color: var(--color-text);
-   font-weight: 200;
+  font-family: 'Roboto',
+    sans-serif;
+  color: var(--color-text);
+  font-weight: 200;
 }
 
 .bg-teal {
@@ -332,6 +332,7 @@ tr {
 .pa-40 {
   padding-top: 50px;
 }
+
 /* Signup */
 .border-green {
   border-top: 0;
@@ -378,15 +379,46 @@ tr {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  }
+}
 
-.noflexwrap{
-  flex-wrap: nowrap 
+.myprofile_row {
+  margin-left: 0;
+}
+.myprofile-tab-nav .btn{
+ padding: 4px;
+}
+.myprofile-tab-nav li {
+  font-size: 1.3rem;
+}
+
+.myprofile-tab-nav .collection {
+  margin:2px 0px;
+
+}
+.myprofile-tab-nav a:hover{
+  color: black;
+}
+
+.myprofile-tab-nav a:hover.active {
+  color: black;
+}
+.myprofile-tab-nav .nav-link.active {
+  background-color: #17baa3;
+  color: white;
+}
+
+.myprofile-tab-nav .nav-tabs {
+  border-bottom: 0;
+}
+
+.noflexwrap {
+  flex-wrap: nowrap
 }
 
 #myTabContent {
   margin-block-start: 1em;
 }
+
 /* Dat's Content End */
 
 /* Variables */
@@ -407,4 +439,3 @@ tr {
   --font-family-title: var(--font-family-sans-serif);
   --font-family-text: var(--font-family-serif);
 }
-

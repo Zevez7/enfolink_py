@@ -180,6 +180,12 @@ $(function () {
 
   //index 
 
+  //myprofile
+ $(".fa-check-circle").click(function () {
+   $(this).toggleClass("active-teal");
+ });
+
+
 
 
 
