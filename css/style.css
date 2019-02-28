@@ -420,7 +420,17 @@ tr {
 }
 
 .boximage {
-max-width: 20%;
+  max-width: 20%;
+}
+
+.myprofile-overflow {
+  height: 2em;
+  line-height: 1em;
+  overflow: hidden;
+}
+
+.img-thumbnail {
+  max-height: 100px;
 }
 
 #myTabContent {
