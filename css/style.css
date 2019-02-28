@@ -384,24 +384,28 @@ tr {
 .myprofile_row {
   margin-left: 0;
 }
-.myprofile-tab-nav .btn{
- padding: 4px;
+
+.myprofile-tab-nav .btn {
+  padding: 4px;
 }
+
 .myprofile-tab-nav li {
   font-size: 1.3rem;
 }
 
 .myprofile-tab-nav .collection {
-  margin:2px 0px;
+  margin: 2px 0px;
 
 }
-.myprofile-tab-nav a:hover{
+
+.myprofile-tab-nav a:hover {
   color: black;
 }
 
 .myprofile-tab-nav a:hover.active {
   color: black;
 }
+
 .myprofile-tab-nav .nav-link.active {
   background-color: #17baa3;
   color: white;
@@ -413,6 +417,10 @@ tr {
 
 .noflexwrap {
   flex-wrap: nowrap
+}
+
+.boximage {
+max-width: 20%;
 }
 
 #myTabContent {
