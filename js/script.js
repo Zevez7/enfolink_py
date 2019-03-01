@@ -1,16 +1,27 @@
-
 $(function () {
   //Multiple
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 
-  $('.tooltipvideo').tooltip({ title: "Video", placement: "bottom" });
-  $('.tooltipcollection').tooltip({ title: "Saved", placement: "bottom" });
-  $('.tooltipinfo').tooltip({ title: "Info", placement: "bottom" });
-  $('.tooltipbundle').tooltip({ title: "Bundle", placement: "bottom" });
+  $('.tooltipvideo').tooltip({
+    title: "Video",
+    placement: "bottom"
+  });
+  $('.tooltipcollection').tooltip({
+    title: "Saved",
+    placement: "bottom"
+  });
+  $('.tooltipinfo').tooltip({
+    title: "Info",
+    placement: "bottom"
+  });
+  $('.tooltipbundle').tooltip({
+    title: "Bundle",
+    placement: "bottom"
+  });
 
-  x = ["howitworks", "FAQ", "signup", "features", "Signup",];
+  x = ["howitworks", "FAQ", "signup", "features", "Signup", ];
 
   $.each(x, function (_index, value) {
     if (window.location.href.indexOf(value) > -1) {
@@ -59,6 +70,11 @@ $(function () {
   $("body").on('DOMSubtreeModified', ".btn-bundle-ul", function () {
     var clicks = $("ul.btn-bundle-ul li").length;
     $('#clicks').html(clicks);
+    if (clicks >= 10) {
+      $('.btn-bundle-ul').removeAttr("id");
+    } else {
+      $('.btn-bundle-ul').attr('id', 'append_to_me');
+    }
   });
 
   var xmsls = '<li class="btn-bundle-li">' +
@@ -72,19 +88,22 @@ $(function () {
         .hide('slow', function () {
           $(this).remove();
         });
-    }
-    else {
+    } else {
       $(this).toggleClass("active-teal");
       $(xmsls).appendTo('#append_to_me').hide().show('slow');
     }
   });
   $('#clear_all').click(function () {
+    clear_allfx();
+  });
+
+  function clear_allfx() {
     $('li.btn-bundle-li')
       .hide('slow', function () {
         $(this).remove();
       });
     $('.fa-cube').removeClass('active-teal');
-  });
+  }
 
   //account
   $('.accountedit').click(function () {
@@ -107,18 +126,18 @@ $(function () {
 
   $('.selectall').click(function () {
     $(this).parent().siblings('.mycol-body').
-      addClass("checkbox-bg-teal");
+    addClass("checkbox-bg-teal");
     $(this).parent().siblings('.mycol-body').children('i.checkbox').
-      addClass("fa-check-square").
-      removeClass('fa-square');
+    addClass("fa-check-square").
+    removeClass('fa-square');
   });
 
   $('.selectnone').click(function () {
     $(this).parent().siblings('.mycol-body').
-      removeClass("checkbox-bg-teal");
+    removeClass("checkbox-bg-teal");
     $(this).parent().siblings('.mycol-body').children('i.checkbox').
-      removeClass("fa-check-square").
-      addClass('fa-square');
+    removeClass("fa-check-square").
+    addClass('fa-square');
   });
 
   $(".mycol-chevron-quick-view").click(function () {
@@ -181,9 +200,9 @@ $(function () {
   //index 
 
   //myprofile
- $(".fa-check-circle").click(function () {
-   $(this).toggleClass("active-teal");
- });
+  $(".fa-check-circle").click(function () {
+    $(this).toggleClass("active-teal");
+  });
 
 
 
