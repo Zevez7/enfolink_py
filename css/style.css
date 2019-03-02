@@ -56,7 +56,7 @@ body {
 }
 
 .active-teal {
-  color: #17baa3;
+  color: #17baa3 !important;
   cursor: pointer
 }
 
@@ -450,9 +450,46 @@ tr {
 }
 
 .mediapage-overflow {
-  height: 2.2em;
+  height: 1.1em;
   line-height: 1.1em;
   overflow: hidden;
+}
+
+/* ucodepage */
+
+.border-teal {
+  border: 2px solid #17baa3 !important;
+}
+
+.medialist {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
+}
+
+.mediaitem {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.medialist div:hover {
+  background-color: gainsboro;
+}
+
+.mediaitem div:nth-child(2) {
+  overflow: hidden;
+  height: 2rem;
+  line-height: 2.5rem
+}
+
+.mediaitem div:nth-child(1) {
+  font-size: 1.7rem;
+  margin-right: 10px;
+  color: #17baa3;
+  text-align: center
 }
 
 /* Dat's Content End */

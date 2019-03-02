@@ -21,11 +21,11 @@ $(function () {
     placement: "bottom"
   });
 
-  x = ["howitworks", "FAQ", "signup", "features", "Signup", ];
+  y = ["howitworks", "FAQ", "signup", "features", "Signup", ];
 
-  $.each(x, function (_index, value) {
+  $.each(y, function (_index, value) {
     if (window.location.href.indexOf(value) > -1) {
-      $("li." + value).addClass('active');
+      $("li." + value + ' ' + 'a').addClass('active-teal');
     }
   });
 
@@ -81,18 +81,26 @@ $(function () {
     '<div class="btn-bundle-text teal-hover cursor"><i class="fas fa-times"></i></div>' +
     ' <div class="btn-bundle-text">testing CDC Information about antibiotic</div></li>';
 
-  $(".fa-cube").click(function () {
-    if ($(this).hasClass("active-teal")) {
-      $(this).toggleClass("active-teal");
-      $('ul#append_to_me li:first')
-        .hide('slow', function () {
-          $(this).remove();
-        });
-    } else {
-      $(this).toggleClass("active-teal");
-      $(xmsls).appendTo('#append_to_me').hide().show('slow');
-    }
+
+  cube = ["home", "myucodes", "mymedia", "myprofile"];
+
+  $.each(cube, function (_index, value) {
+    $(".fa-cube").click(function () {
+      if (window.location.href.indexOf(value) > -1) {
+        if ($(this).hasClass("active-teal")) {
+          $(this).toggleClass("active-teal");
+          $('ul#append_to_me li:first')
+            .hide('slow', function () {
+              $(this).remove();
+            });
+        } else {
+          $(this).toggleClass("active-teal");
+          $(xmsls).appendTo('#append_to_me').hide().show('slow');
+        }
+      }
+    });
   });
+
   $('#clear_all').click(function () {
     clear_allfx();
   });
@@ -171,6 +179,8 @@ $(function () {
   });
 
 
+
+
   //FAQ
 
   //mymedia
@@ -205,17 +215,13 @@ $(function () {
   });
 
 
+  //ucodepage
 
 
-
-
-
-
-
-
-
-
-
+  $('.medialist div').click(function () {
+    $('.medialist div').removeClass('border-teal');
+    $(this).addClass('border-teal');
+  });
 
 
 
