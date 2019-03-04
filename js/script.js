@@ -252,13 +252,14 @@ $(function () {
 
   // addmedia
 
-  $('.form-check.online').click(function () {
-    $('.form-check.online').removeClass('active-teal');
+  $('div.online .form-check-label').click(function () {
+    $('div.online .form-check-label').removeClass('active-teal');
     $(this).addClass('active-teal');
   });
 
-  $('.form-check.upload').click(function () {
-    $('.form-check.upload').removeClass('active-teal');
+
+  $('div.upload .form-check-label').click(function () {
+    $('div.upload .form-check-label').removeClass('active-teal');
     $(this).addClass('active-teal');
   });
 

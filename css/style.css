@@ -403,8 +403,9 @@ tr {
 }
 
 .myprofile-tab-nav .collection {
-  margin: 2px 0px;
-
+  margin: 2px 2px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .myprofile-tab-nav a:hover {
@@ -450,6 +451,8 @@ tr {
 .nav-pills .nav-link.active {
   background-color: #17baa3 !important;
 }
+
+/* mediapage */
 
 .mediapage_container img {
   max-height: 600px;
@@ -502,6 +505,13 @@ tr {
   color: #17baa3;
   text-align: center
 }
+
+
+/* addmedia */
+.form-check-label {
+  cursor: pointer;
+}
+
 
 /* Dat's Content End */
 
