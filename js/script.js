@@ -21,6 +21,11 @@ $(function () {
     placement: "bottom"
   });
 
+  $('.fa-plus.icon').tooltip({
+    title: "Add Media",
+    placement: "bottom"
+  });
+
   y = ["howitworks", "FAQ", "signup", "features", "Signup", ];
 
   $.each(y, function (_index, value) {

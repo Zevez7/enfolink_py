@@ -14,6 +14,13 @@ body {
   font-weight: 200;
 }
 
+.fa-plus.icon {
+  font-size: 1.4rem;
+  margin: 0 5px;
+  padding: 12px;
+  color: #6c757d;
+}
+
 .bg-teal {
   background: #8ee9dd
 }
