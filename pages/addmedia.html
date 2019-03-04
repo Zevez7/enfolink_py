@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"> crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <title>Enfolink</title>
+</head>
+
+<body>
+  <!-- header/Top Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
+      <button type="button" class="btn cursor shover px-4 bg-transparent" id="expandSidemenu">
+        <i class="fas fa-bars fa-2x text-secondary"></i>
+      </button>
+      <a class="navbar-brand mx-5" href="../pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
+        <img src="../images\logo.png" width="200" height="auto" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline mx-auto my-2 my-lg-0">
+          <input class="form-control mr-sm-2" style="min-width: 400px" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav p-1 shover">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              DAT
+            </a>
+            <div class="dropdown-menu dropdown-menu-right ">
+              <a href="../index.html" class="dropdown-item">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End header/Top Nav -->
+
+  <!-- body-wrapper -->
+  <div class="body-wrapper-100px">
+
+    <!-- Side NAV -->
+    <div class="float-left sticky-top NavExpand sidebar22">
+
+      <ul class="list-group list-group-flush">
+        <a href="../pages\home.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 home">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Home
+            </div>
+          </li>
+        </a>
+        <a href="../pages\mycollection.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mycollection">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-folder"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Collection
+            </div>
+          </li>
+        </a>
+        <a href="../pages\myucodes.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myucodes">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My UCodes
+            </div>
+          </li>
+        </a>
+        <a href="../pages\mymedia.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 mymedia">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Media
+            </div>
+          </li>
+        </a>
+        <a href="../pages\myprofile.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myprofile">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              My Profile
+            </div>
+          </li>
+        </a>
+        <a href="../pages\account.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 myaccount">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              Account
+            </div>
+          </li>
+        </a>
+        <a href="../pages\aboutus.html" class="list-group-item-action">
+          <li class="list-group-item d-flex shover bg-light py-3 px-2 border-L-3 aboutus">
+            <div class="text-center h4 mb-0" style="width: 35px">
+              <i class="fas fa-info"></i>
+            </div>
+            <div class="NavExpandtext align-self-center mx-1">
+              About Us
+            </div>
+          </li>
+        </a>
+
+      </ul>
+    </div>
+    <!-- Side NAV End-->
+
+    <!-- bundle button -->
+    <div class="div-button sticky-top shadow">
+      <button type="button" class="btn btn-bundle expand-me-default">
+        <div class="row nowrap inline-block justify-content-center">
+          <span id="clicks">0</span> &nbsp
+          <div id="bundle-cart2"> Bundle Cart</div>
+        </div>
+      </button>
+      <div class="btn-bundle-body bundle-delete-none p-2 expand-me-default">
+        <ul class="btn-bundle-ul" id="append_to_me">
+
+        </ul>
+        <div class="p-2 d-flex justify-content-around">
+          <button type="button" class="btn btn-success">Create</button>
+          <button type="button" class="btn btn-secondary" id="clear_all">Clear All</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- bundle button end -->
+
+    <!-- Page Title -->
+    <article class="p-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h3 m-4 font-weight-bold border-bottom text-secondary"> Add Media </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Page Title End -->
+
+
+
+    <div class="container">
+
+      <article>
+
+        <!-- tab -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="online-tab" data-toggle="tab" href="#online" role="tab" aria-controls="online"
+                  aria-selected="true"><i class="fas fa-globe-americas"></i> Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload"
+                  aria-selected="false"> <i class="fas fa-cloud-upload-alt"></i> Upload</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- tab end -->
+
+        <div class="row justify-content-center">
+          <div class="col-12">
+
+
+            <div class="tab-content" id="myTabContent">
+
+              <!-- online -->
+              <div class="w-100 tab-pane fade show active" id="online" role="tabpanel" aria-labelledby="online-tab">
+
+                <!-- form -->
+                <form>
+
+                  <!-- radio -->
+                  <article class="py-2">
+                    <div class="font-weight-bold pt-3">Select Media Type</div>
+
+                    <div class="form-check online active-teal">
+                      <input class="form-check-input" type="radio" name="select_media" id="Website" value="option1"
+                        checked>
+                      <label class="form-check-label" for="Website"><span class="font-weight-bold">Website
+                          Link:</span>
+                        all web address </label>
+                    </div>
+                    <div class="form-check online">
+                      <input class="form-check-input" type="radio" name="select_media" id="document" value="option2">
+                      <label class="form-check-label" for="document">
+                        <span class="font-weight-bold"> Document link:</span>
+                        pdf, doc, docx, google drive doc, google drive pdf, google slide </label>
+                    </div>
+                    <div class="form-check online">
+                      <input class="form-check-input" type="radio" name="select_media" id="Video" value="option3">
+                      <label class="form-check-label" for="Video">
+                        <span class="font-weight-bold">Video Link:</span> Youtube, Google Drive </label>
+                    </div>
+
+                    <div class="form-check online">
+                      <input class="form-check-input" type="radio" name="select_media" id="Image" value="option4">
+                      <label class="form-check-label" for="Image"> <span class="font-weight-bold">Image Link:</span>
+                        png, jpg, gif </label>
+                    </div>
+                  </article>
+                  <!-- radio -->
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="webaddress">
+                      Media URL*
+                    </label>
+                    <input type="text" class="form-control" id="webaddress" placeholder="http://...">
+                  </div>
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="title">
+                      Media Title* </label>
+                    <input type="text" class="form-control" id="title" placeholder="Type here...">
+                  </div>
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="description"> Description </label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Type here..."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label class="font-weight-bold d-flex align-items-end" for="exampleFormControlSelect2">Add To My
+                      Collection <button class="btn collection shover cursor shadow ml-auto"><i class="far fa-folder"></i>
+                        New
+                        Folder</button>
+                    </label>
+
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>Folder 1</option>
+                      <option>Folder 2 </option>
+                      <option>Folder 3</option>
+                      <option>Folder 4 </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group row justify-content-center py-4">
+                    <button type="button" class="btn btn-group btn-primary px-5 mx-2 accountedit">Cancel</button>
+
+                    <button type="submit" class="btn btn-group btn-success px-5 mx-2 accountsave">Submit</button>
+                  </div>
+
+
+                </form>
+                <!-- form -->
+
+              </div>
+              <!-- online -->
+
+
+              <!-- upload -->
+              <div class="w-100 tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+
+                <!-- form -->
+                <form>
+
+                  <!-- radio -->
+                  <article class="py-2">
+                    <div class="font-weight-bold pt-3">Select Media Type</div>
+
+                    <div class="form-check upload active-teal">
+                      <input class="form-check-input" type="radio" name="select_media_upload" id="Website-upload" value="option1"
+                        checked>
+                      <label class="form-check-label" for="Website-upload"><span class="font-weight-bold">Document:
+                        </span>
+                        pdf, docx</label>
+                    </div>
+
+                    <div class="form-check upload">
+                      <input class="form-check-input" type="radio" name="select_media_upload" id="Image-upload" value="option2">
+                      <label class="form-check-label" for="Image-upload"> <span class="font-weight-bold">Image Link:</span>
+                        png, jpg, gif </label>
+                    </div>
+                  </article>
+                  <!-- radio -->
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="exampleFormControlFile1">Upload Media</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="webaddress">
+                      Media URL*
+                    </label>
+                    <input type="text" class="form-control" id="webaddress" placeholder="http://...">
+                  </div>
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="title">
+                      Media Title* </label>
+                    <input type="text" class="form-control" id="title" placeholder="Type here...">
+                  </div>
+
+                  <div class="form-group pt-2">
+                    <label class="font-weight-bold" for="description"> Description </label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Type here..."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label class="font-weight-bold d-flex align-items-end" for="exampleFormControlSelect2">Add To My
+                      Collection <button class="btn collection shover cursor shadow ml-auto"><i class="far fa-folder"></i>
+                        New
+                        Folder</button>
+                    </label>
+
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>Folder 1</option>
+                      <option>Folder 2 </option>
+                      <option>Folder 3</option>
+                      <option>Folder 4 </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group row justify-content-center py-4">
+                    <button type="button" class="btn btn-group btn-primary px-5 mx-2 accountedit">Cancel</button>
+
+                    <button type="submit" class="btn btn-group btn-success px-5 mx-2 accountsave">Submit</button>
+                  </div>
+
+
+                </form>
+                <!-- form -->
+
+              </div>
+              <!-- upload -->
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- radio-button -->
+
+
+
+        <div class="col-10">
+
+
+        </div>
+
+        <!-- radio-button end-->
+
+
+
+
+
+
+
+
+      </article>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <!-- end body-wrapper -->
+
+
+</body>
+
+</html>

@@ -417,7 +417,6 @@ tr {
   border-bottom: 0;
 }
 
-
 .noflexwrap {
   flex-wrap: nowrap
 }
@@ -449,10 +448,15 @@ tr {
   max-height: 600px;
 }
 
+
 .mediapage-overflow {
   height: 1.1em;
   line-height: 1.1em;
   overflow: hidden;
+}
+
+.mediapage_date {
+  display: flex;
 }
 
 /* ucodepage */

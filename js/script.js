@@ -224,6 +224,40 @@ $(function () {
   });
 
 
+  //mediapage
+
+  // $('.mediapage-bundle-buttton').click(function () {
+  //   $(xmsls).appendTo('#append_to_me').hide().show('slow');
+  // });
+
+  $(".mediapage-bundle-buttton").click(function () {
+    if ($('.fa-cube').hasClass("active-teal")) {
+      $('.fa-cube').toggleClass("active-teal");
+      $('ul#append_to_me li:first')
+        .hide('slow', function () {
+          $(this).remove();
+        });
+    } else {
+      $('.fa-cube').toggleClass("active-teal");
+      $(xmsls).appendTo('#append_to_me')
+        .hide()
+        .show('slow');
+    }
+  });
+
+  // addmedia
+
+  $('.form-check.online').click(function () {
+    $('.form-check.online').removeClass('active-teal');
+    $(this).addClass('active-teal');
+  });
+
+  $('.form-check.upload').click(function () {
+    $('.form-check.upload').removeClass('active-teal');
+    $(this).addClass('active-teal');
+  });
+
+
 
 
 });
