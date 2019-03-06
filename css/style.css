@@ -7,11 +7,16 @@
 /* multipage */
 
 body {
-  background-color: #f5f5f5 !important;
+  background-color: #F2F2F2 !important;
   font-family: 'Roboto',
     sans-serif;
-  color: #6c757d;
-  font-weight: 200;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 1.1rem
+}
+
+a {
+  color: #004C9E
 }
 
 .fa-plus.icon {
@@ -35,7 +40,7 @@ body {
 }
 
 .list-group-item-action {
-  color: #6c757d
+  color: inherit;
 }
 
 .sidebar22 {
@@ -52,7 +57,7 @@ body {
 }
 
 .teal-hover:hover {
-  color: #17baa3;
+  color: var(--teal);
   cursor: pointer
 }
 
@@ -63,12 +68,12 @@ body {
 }
 
 .active-teal {
-  color: #17baa3 !important;
+  color: var(--teal) !important;
   cursor: pointer
 }
 
 .border-active {
-  border-left: 5px solid #17baa3 !important;
+  border-left: 5px solid var(--teal) !important;
 }
 
 .border-L-3 {
@@ -110,6 +115,15 @@ input[type=checkbox] {
   transform: scale(1.5);
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--teal)
+}
+
 /* Thumbnail */
 
 .h7 {
@@ -122,22 +136,6 @@ input[type=checkbox] {
   overflow: hidden;
   padding: 0;
   font-size: 1rem
-}
-
-a.thumb-title:link {
-  color: #6c757d
-}
-
-a.thumb-title:visited {
-  color: #6c757d
-}
-
-a.thumb-title:hover {
-  color: #17baa3
-}
-
-a.thumb-title:active {
-  color: #6c757d
 }
 
 .thumb-user {
@@ -189,7 +187,6 @@ a.thumb-title:active {
 /* Bundle Button */
 
 .div-button {
-  float: right;
   z-index: 2;
   position: fixed;
   top: 90px;
@@ -197,8 +194,12 @@ a.thumb-title:active {
   height: auto;
 }
 
+.fa-bars {
+  color: #666666;
+}
+
 .btn-bundle {
-  background: #17baa3;
+  background: var(--teal);
   color: white;
   cursor: pointer;
   width: 200px;
@@ -208,8 +209,16 @@ a.thumb-title:active {
   color: white !important;
 }
 
+.btn-outline-secondary {
+  color: inherit;
+}
+
 .table {
-  color: #6c757d;
+  color: inherit;
+}
+
+.table .thead-light th {
+  color: inherit;
 }
 
 .expand-me {
@@ -256,11 +265,12 @@ li.btn-bundle-li {
 
 .collection {
   list-style-type: none;
-  border: 1px solid gainsboro !important;
+  border: 1px solid gainsboro;
   padding: 6px 9px;
   margin: 4px 7px;
   background-color: white;
-  color: #6c757d;
+  color: #666666;
+  ;
 }
 
 ul.navmycol {
@@ -417,7 +427,7 @@ tr {
 }
 
 .myprofile-tab-nav .nav-link.active {
-  background-color: #17baa3;
+  background-color: var(--teal);
   color: white;
 }
 
@@ -449,7 +459,7 @@ tr {
 }
 
 .nav-pills .nav-link.active {
-  background-color: #17baa3 !important;
+  background-color: var(--teal) !important;
 }
 
 /* mediapage */
@@ -472,7 +482,7 @@ tr {
 /* ucodepage */
 
 .border-teal {
-  border: 2px solid #17baa3 !important;
+  border: 2px solid var(--teal) !important;
 }
 
 .medialist {
@@ -502,7 +512,7 @@ tr {
 .mediaitem div:nth-child(1) {
   font-size: 1.7rem;
   margin-right: 10px;
-  color: #17baa3;
+  color: var(--teal);
   text-align: center
 }
 
@@ -520,7 +530,9 @@ tr {
 :root {
 
   /* Override Variables */
-  --gray: #7d7d7d;
+  /* --teal: #17baa3; */
+  --teal: #0D776B;
+  --gray: #666666;
   --gray-dark: #404040;
   --font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-serif: 'Merriweather', 'Times New Roman', serif;

@@ -48,6 +48,7 @@ $(function () {
     $(".NavExpandtext").toggle(100);
   });
 
+ 
   $(".list-group-item-action").focus(function () {
     $(this).css("border", "3px solid #9ecaed");
   });

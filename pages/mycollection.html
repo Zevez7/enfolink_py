@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <!-- <meta http-equiv="refresh" content="5"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"> crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -17,14 +18,14 @@
   <title>Enfolink</title>
 </head>
 
-<body class="text-secondary">
+<body>
   <!-- header/Top Nav -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow " style="z-index:3">
-      <button type="button" class="btn cursor shover px-4 bg-transparent" id="expandSidemenu">
-        <i class="fas fa-bars fa-2x text-secondary"></i>
+      <button type="button" class="btn cursor shover px-2 bg-transparent" id="expandSidemenu">
+        <i class="fas fa-bars fa-2x"></i>
       </button>
-      <a class="navbar-brand mx-5" href="../pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
+      <a class="navbar-brand mx-3" href="../pages/home.html" data-toggle="tooltip" data-placement="bottom" title="Enfolink Logo">
         <img src="../images\logo.png" width="200" height="auto" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -35,7 +36,7 @@
           <input class="form-control mr-sm-2" style="min-width: 300px" type="search" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <a href="addmedia.html"><i class="fas fa-plus icon shover cursor"></i></a>
+        <a href="addmedia.html"><i class="fas fa-plus icon cursor"></i></a>
         <ul class="navbar-nav p-1 shover">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
@@ -159,7 +160,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="h3 m-4 font-weight-bold border-bottom text-secondary"> My Collection </div>
+            <div class="h3 m-4 font-weight-bold border-bottom"> My Collection </div>
           </div>
         </div>
       </div>
@@ -173,16 +174,54 @@
       <div class="container">
         <div class="row">
           <div class="col d-flex flex-wrap mb-4">
-            <button class="btn collection shover cursor shadow"><i class="fas fa-cut"></i> Move To</button>
-            <button class="btn collection shover cursor shadow"><i class="far fa-copy"></i> Copy To</button>
-            <button class="btn collection shover cursor shadow bundlecheckbox"><i class="fas fa-cube"></i> Bundle</button>
-            <button class="btn collection shover cursor shadow"><i class="fas fa-trash-alt"></i> Delete</button>
-            <button class="btn collection shover cursor shadow"><i class="fas fa-folder"></i> New Folder</button>
+            <button type="button" class="btn collection cursor"><i class="fas fa-cut"></i>
+              Move To</button>
+            <button type="button" class="btn collection cursor"><i class="far fa-copy"></i>
+              Copy To</button>
+            <button type="button" class="btn collection cursor bundlecheckbox"><i class="fas fa-cube"></i>
+              Bundle</button>
+            <button type="button" class="btn collection cursor"><i class="fas fa-trash-alt"></i>
+              Delete</button>
+            <button type="button" class="btn collection cursor" data-toggle="modal" data-target="#newfolder"><i class="fas fa-folder"></i>
+              Create New Folder</button>
           </div>
         </div>
       </div>
     </article>
     <!--Edit Button End-->
+
+    <!-- Modal add new folder  -->
+
+    <div class="modal fade" id="newfolder" tabindex="-1" role="dialog" aria-labelledby="newfolder" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New Folder</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">New Folder Name</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Type Name..." aria-label="new_folder"
+                aria-describedby="type_new_name">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modal add new folder  -->
+
 
     <article>
       <div class="container-fluid">
