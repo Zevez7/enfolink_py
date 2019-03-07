@@ -48,7 +48,7 @@ $(function () {
     $(".NavExpandtext").toggle(100);
   });
 
- 
+
   $(".list-group-item-action").focus(function () {
     $(this).css("border", "3px solid #9ecaed");
   });
@@ -166,9 +166,14 @@ $(function () {
     $(this).toggleClass("active-teal");
   });
 
-  $(".checkbox").click(function () {
+  $(".mycol-body .checkbox").click(function () {
     $(this).toggleClass("fa-check-square fa-square");
     $(this).parent().toggleClass("checkbox-bg-teal");
+  });
+
+  $(".navmycol-list2 .checkbox").click(function () {
+    $(this).toggleClass("fa-check-square fa-square");
+    $(this).parents("li").toggleClass("checkbox-bg-teal");
   });
 
   $(".mycol-chevron-pin-board").click(function () {

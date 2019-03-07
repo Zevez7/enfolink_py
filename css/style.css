@@ -3,13 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 /* Dat's Content Start  */
 
-
 /* multipage */
 
 body {
   background-color: #F2F2F2 !important;
-  font-family: 'Roboto',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--gray);
   font-weight: 400;
   font-size: 1.1rem
@@ -61,10 +59,8 @@ a {
   cursor: pointer
 }
 
-
 .NavExpandtext {
   display: none;
-
 }
 
 .active-teal {
@@ -91,7 +87,6 @@ a {
 .bg-lightgray {
   background-color: #f5f5f5 !important;
 }
-
 
 .shadow {
   box-shadow: 0px 3px 5px gainsboro !important;
@@ -225,7 +220,6 @@ input[type=checkbox] {
   width: 250px !important;
 }
 
-
 .expand-me-default {
   width: 200px !important;
 }
@@ -302,26 +296,23 @@ div.mycol-chevron {
 }
 
 .mycol-title-bar {
-  height: 3em;
-  line-height: 1.2em;
+  height: 2.4em;
+  line-height: 1.6em;
   overflow: hidden;
   background-color: white;
-  padding: 0.2em;
+  padding-top: 0.1em;
   box-shadow: 0px 3px 5px gainsboro;
   margin-bottom: 5px;
 }
 
 .mycol-title-text {
-  float: left;
   padding: 0.4em;
-  width: 85%;
 }
 
 .mycol-icons {
-  position: absolute;
-  right: 20px;
   padding: 0.4em;
-  font-size: 1.2em
+  font-size: 1em;
+  white-space: nowrap;
 }
 
 .mycol-body {
@@ -334,6 +325,7 @@ div.mycol-chevron {
 }
 
 /* myucode */
+
 table.myucodetable td,
 tr {
   text-align: center;
@@ -341,6 +333,7 @@ tr {
 }
 
 /* FAQ */
+
 .anchor {
   display: block;
   position: relative;
@@ -353,12 +346,12 @@ tr {
 }
 
 /* Signup */
+
 .border-green {
   border-top: 0;
   border-right: 3px solid #28a745 !important;
   border-bottom: 3px solid #28a745 !important;
   border-left: 3px solid #28a745 !important;
-
 }
 
 .signupbg {
@@ -383,7 +376,6 @@ tr {
 .fs-65 {
   font-size: 65px
 }
-
 
 /* my profile */
 
@@ -429,6 +421,7 @@ tr {
 .myprofile-tab-nav .nav-link.active {
   background-color: var(--teal);
   color: white;
+  border-color: #dee2e6;
 }
 
 .myprofile-tab-nav .nav-tabs {
@@ -444,8 +437,8 @@ tr {
 }
 
 .myprofile-overflow {
-  height: 2em;
-  line-height: 1em;
+  height: 2.2em;
+  line-height: 1.1em;
   overflow: hidden;
 }
 
@@ -468,7 +461,6 @@ tr {
   max-height: 600px;
 }
 
-
 .mediapage-overflow {
   height: 1.1em;
   line-height: 1.1em;
@@ -488,7 +480,6 @@ tr {
 .medialist {
   margin-bottom: 1rem;
   font-size: 1rem;
-
 }
 
 .mediaitem {
@@ -516,23 +507,21 @@ tr {
   text-align: center
 }
 
-
 /* addmedia */
+
 .form-check-label {
   cursor: pointer;
 }
-
 
 /* Dat's Content End */
 
 /* Variables */
 
 :root {
-
   /* Override Variables */
   /* --teal: #17baa3; */
   --teal: #0D776B;
-  --gray: #666666;
+  --gray: #555555;
   --gray-dark: #404040;
   --font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-serif: 'Merriweather', 'Times New Roman', serif;
