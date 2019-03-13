@@ -6,7 +6,7 @@
   <!-- <meta http-equiv="refresh" content="5"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"> crossorigin="anonymous">
+    crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -173,7 +173,8 @@
         <div class="col-10 pb-3">
           <a href="addmedia.html"><button type="button" class="btn collection shover"> <i class="fas fa-plus"></i>
               Add Media </button></a>
-          <button type="button" class="btn collection shover"> <i class="fas fa-save"></i> Save</button>
+          <button type="button" class="btn collection shover" data-toggle="modal" data-target="#save-to"> <i class="fas fa-save"></i>
+            Save</button>
           <button type="button" class="btn collection shover cursor" data-toggle="modal" data-target="#newfolder"><i
               class="fas fa-folder"></i>
             Create New Folder</button>
@@ -249,7 +250,6 @@
                   <th scope="col">Info</th>
                   <th scope="col">Bundle</th>
                   <th scope="col">Save</th>
-                  <th scope="col">Edit</th>
                   <th scope="col">Delete</th>
 
                 </tr>
@@ -270,14 +270,39 @@
                   <td>234</td>
                   <td> <i class="fas fa-info-circle tooltipinfo"></i> </td>
                   <td> <i class="fas fa-cube teal-hover"></i> </td>
-                  <td><i class="fas fa-save"></i> </td>
-                  <td><i class="fas fa-pencil-alt"></i> </td>
-                  <td> <i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-save teal-hover" data-toggle="modal" data-target="#save-to"></i> </td>
+                  <td data-toggle="modal" data-target="#mymedia-delete" class="teal-hover"> <i class="fas fa-times"></i></td>
                 </tr>
 
               </tbody>
             </table>
           </div>
+
+          <!-- Modal  Delete  -->
+          <div class="modal fade" id="mymedia-delete" tabindex="-1" role="dialog" aria-labelledby="mycol_delete"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title"> Delete Confirmation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div> Hello kitty cat</div>
+                  <div> Hello kitty cat</div>
+                  <div> Hello kitty cat</div>
+
+                </div>
+                <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal Delete  -->
 
           <div class="w-100 tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
@@ -295,7 +320,6 @@
                   <th scope="col">Info</th>
                   <th scope="col">Bundle</th>
                   <th scope="col">Save</th>
-                  <th scope="col">Edit</th>
                   <th scope="col">Delete</th>
 
                 </tr>
@@ -316,8 +340,7 @@
                   <td>234</td>
                   <td> <i class="fas fa-info-circle tooltipinfo"></i> </td>
                   <td> <i class="fas fa-cube teal-hover"></i> </td>
-                  <td><i class="fas fa-save"></i> </td>
-                  <td><i class="fas fa-pencil-alt"></i> </td>
+                  <td><i class="fas fa-save teal-hover" data-toggle="modal" data-target="#save-to"></i> </td>
                   <td> <i class="fas fa-times"></i></td>
                 </tr>
 
@@ -336,8 +359,7 @@
 
                   <td> <i class="fas fa-info-circle tooltipinfo"></i> </td>
                   <td> <i class="fas fa-cube teal-hover"></i> </td>
-                  <td><i class="fas fa-save"></i> </td>
-                  <td><i class="fas fa-pencil-alt"></i> </td>
+                  <td><i class="fas fa-save teal-hover" data-toggle="modal" data-target="#save-to"></i> </td>
                   <td> <i class="fas fa-times"></i></td>
                 </tr>
 
@@ -363,7 +385,6 @@
                   <th scope="col">Info</th>
                   <th scope="col">Bundle</th>
                   <th scope="col">Save</th>
-                  <th scope="col">Edit</th>
                   <th scope="col">Delete</th>
 
                 </tr>
@@ -386,8 +407,7 @@
 
                   <td> <i class="fas fa-info-circle tooltipinfo"></i> </td>
                   <td> <i class="fas fa-cube teal-hover"></i> </td>
-                  <td><i class="fas fa-save"></i> </td>
-                  <td><i class="fas fa-pencil-alt"></i> </td>
+                  <td><i class="fas fa-save teal-hover" data-toggle="modal" data-target="#save-to"></i> </td>
                   <td> <i class="fas fa-times"></i></td>
                 </tr>
 
@@ -407,8 +427,7 @@
 
                   <td> <i class="fas fa-info-circle tooltipinfo"></i> </td>
                   <td> <i class="fas fa-cube teal-hover"></i> </td>
-                  <td><i class="fas fa-save"></i> </td>
-                  <td><i class="fas fa-pencil-alt"></i> </td>
+                  <td><i class="fas fa-save teal-hover" data-toggle="modal" data-target="#save-to"></i> </td>
                   <td> <i class="fas fa-times"></i></td>
                 </tr>
 
@@ -438,10 +457,68 @@
   <!-- end body-wrapper -->
 
 
+  <!-- modal -->
+
+  <!-- Modal  Delete  -->
+  <div class="modal fade" id="mymedia-delete" tabindex="-1" role="dialog" aria-labelledby="mycol_delete" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Delete Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
+
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Delete  -->
+  <!-- Modal Save-To  -->
+
+  <div class="modal fade" id="save-to" tabindex="-1" role="dialog" aria-labelledby="save-copy-to" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Save To</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
 
 
+          <hr>
+          <div class="mycol-body">
+            <i class="far fa-square checkbox fa-lg"></i>
+            Folder 1 </div>
+          <div class="mycol-body">
+            <i class="far fa-square checkbox fa-lg"></i>
+            Folder 2 </div>
 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- End Modal save-To  -->
+  <!-- modal end -->
 
 
 </body>

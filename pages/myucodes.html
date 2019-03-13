@@ -6,7 +6,7 @@
   <!-- <meta http-equiv="refresh" content="5"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"> crossorigin="anonymous">
+    crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -200,7 +200,7 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a class="dropdown-item" href="#">Save</a>
                       <a class="dropdown-item" href="#">Email To</a>
-                      <a class="dropdown-item" href="#">Delete</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myucode-delete">Delete</a>
                     </div>
                   </td>
                 </tr>
@@ -214,7 +214,7 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a class="dropdown-item" href="#">Save</a>
                       <a class="dropdown-item" href="#">Email To</a>
-                      <a class="dropdown-item" href="#">Delete</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myucode-delete">Delete</a>
                     </div>
                   </td>
                 </tr>
@@ -228,14 +228,43 @@
                     <div class="dropdown-menu dropdown-menu-right">
                       <a class="dropdown-item" href="#">Save</a>
                       <a class="dropdown-item" href="#">Email To</a>
-                      <a class="dropdown-item" href="#">Delete</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myucode-delete">Delete</a>
                     </div>
                   </td>
                 </tr>
               </tbody>
             </table>
+
+            <!-- Modal  Delete  -->
+            <div class="modal fade" id="myucode-delete" tabindex="-1" role="dialog" aria-labelledby="mycol_delete"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> Delete Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div> Hello kitty cat</div>
+                    <div> Hello kitty cat</div>
+                    <div> Hello kitty cat</div>
+
+                  </div>
+                  <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal Delete  -->
+
+
+
             <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center">
+              <ul class="pagination justify-content-center pagination-lg">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -328,6 +357,32 @@
   </div>
   <!-- end body-wrapper -->
 
+  <!-- modal -->
+  <!-- Modal  Delete  -->
+  <div class="modal fade" id="myucode-delete" tabindex="-1" role="dialog" aria-labelledby="mycol_delete" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Delete Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
+          <div> Hello kitty cat</div>
+
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Delete  -->
+  <!-- modal end -->
 
 </body>
 

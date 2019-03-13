@@ -17,6 +17,11 @@ a {
   color: #004C9E
 }
 
+
+.page-link {
+  color: #004C9E!important;
+}
+
 .fa-plus.icon {
   font-size: 1.4rem;
   margin: 0 5px;
@@ -51,7 +56,7 @@ a {
   background-color: #f8f9fa;
   overflow-x: hidden;
   padding-top: 50px;
-  margin-top: 15px
+  margin-top: 20px
 }
 
 .teal-hover:hover {
@@ -362,6 +367,7 @@ tr {
 
 .title_column {
   min-width: 300px;
+  text-align: left;
 }
 
 .mymedia_list {
